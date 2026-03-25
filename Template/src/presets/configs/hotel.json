@@ -1,0 +1,153 @@
+{
+  "_comment": "Boutique hotel / B&B starter config (luxury theme, rooms as services)",
+  "businessType": "hotel",
+  "business": {
+    "name": "The Alderton",
+    "tagline": "Luxury in Every Detail.",
+    "logoText": "The Alderton",
+    "contactInfo": {
+      "phone": "+44 20 1234 5678",
+      "email": "reservations@thealderton.example.com",
+      "address": "9 Mayfair Gardens, London, W1K 4XZ",
+      "mapEmbedUrl": ""
+    },
+    "socialLinks": [
+      { "platform": "instagram", "url": "https://instagram.com/" },
+      { "platform": "facebook",  "url": "https://facebook.com/" }
+    ]
+  },
+  "nav": {
+    "items": [
+      { "label": "Rooms",         "href": "#services" },
+      { "label": "Gallery",       "href": "#gallery" },
+      { "label": "About",         "href": "#about" },
+      { "label": "Dining",        "href": "#dining" }
+    ],
+    "ctaButton": { "label": "Book a Room", "href": "#booking" }
+  },
+  "seo": {
+    "title": "The Alderton — Boutique Luxury Hotel London",
+    "description": "A beautifully restored Georgian townhouse hotel in Mayfair, offering refined rooms and exceptional service.",
+    "keywords": "boutique hotel, luxury hotel, London, Mayfair, B&B, rooms"
+  },
+  "sections": {
+    "hero": true, "services": true, "about": true, "ctaBanner": true,
+    "testimonials": true, "gallery": true, "faq": true, "partners": true,
+    "pricing": false, "booking": true, "contact": true, "map": true,
+    "team": false, "menu": false, "schedule": false, "openingHours": false, "beforeAfter": false
+  },
+  "sectionOrder": ["hero","services","gallery","testimonials","partners","about","faq","ctaBanner","booking","contact","map"],
+  "content": {
+    "hero": {
+      "headline": "Where London Meets Luxury",
+      "subheadline": "A beautifully restored Georgian townhouse hotel in the heart of Mayfair — timeless elegance, modern comfort.",
+      "primaryCta":   { "label": "View Rooms",    "href": "#services" },
+      "secondaryCta": { "label": "Book a Stay",   "href": "#booking" },
+      "slides": [
+        { "imageUrl": "/images/hero-1.jpg", "imageAlt": "Hotel exterior at dusk" },
+        { "imageUrl": "/images/hero-2.jpg", "imageAlt": "Luxury bedroom interior" }
+      ]
+    },
+    "services": {
+      "sectionTitle": "Our Rooms",
+      "sectionSubtitle": "Each room is individually designed and hand-sourced with antiques and fine textiles.",
+      "variant": "rooms",
+      "items": [
+        {
+          "id": "deluxe", "title": "Deluxe Room",
+          "description": "An elegant retreat with a king bed, marble en-suite, and courtyard views.",
+          "price": "From £280 / night",
+          "tags": ["King Bed", "En-Suite", "City View", "Breakfast Included"],
+          "imageUrl": "/images/room-deluxe.jpg"
+        },
+        {
+          "id": "superior", "title": "Superior Room",
+          "description": "Elevated comfort with a four-poster bed, walk-in wardrobe, and garden views.",
+          "price": "From £350 / night",
+          "tags": ["Four-Poster Bed", "Walk-In Wardrobe", "Garden View", "Espresso Machine"],
+          "imageUrl": "/images/room-superior.jpg"
+        },
+        {
+          "id": "suite", "title": "Mayfair Suite",
+          "description": "Expansive two-room suite with a private drawing room, butler service, and panoramic views.",
+          "price": "From £650 / night",
+          "tags": ["Separate Living Room", "Butler Service", "Panoramic Views", "Private Bar"],
+          "imageUrl": "/images/room-suite.jpg"
+        },
+        {
+          "id": "penthouse", "title": "Penthouse",
+          "description": "Our crowning jewel — a full-floor retreat with a terrace and private access.",
+          "price": "From £1,200 / night",
+          "tags": ["Private Terrace", "Full Floor", "Bespoke Interiors", "24h Concierge"],
+          "imageUrl": "/images/room-penthouse.jpg"
+        }
+      ]
+    },
+    "gallery": {
+      "sectionTitle": "The Alderton Experience",
+      "items": [
+        { "id": "g1", "imageUrl": "/images/gallery-1.jpg", "alt": "Grand staircase" },
+        { "id": "g2", "imageUrl": "/images/gallery-2.jpg", "alt": "Drawing room" },
+        { "id": "g3", "imageUrl": "/images/gallery-3.jpg", "alt": "Dining room" },
+        { "id": "g4", "imageUrl": "/images/gallery-4.jpg", "alt": "Mayfair Suite bedroom" }
+      ]
+    },
+    "testimonials": {
+      "sectionTitle": "Guest Reviews",
+      "items": [
+        { "id": "te1", "quote": "Truly the finest boutique hotel in London. The suite was extraordinary — we will return.", "name": "Victoria L.", "rating": 5 },
+        { "id": "te2", "quote": "Impeccable service from the moment we arrived. Every detail was thoughtful and elegant.", "name": "Thomas H.", "rating": 5 }
+      ]
+    },
+    "partners": {
+      "sectionTitle": "Member Of",
+      "items": [
+        { "id": "p1", "name": "Small Luxury Hotels",  "logoUrl": "/images/partner-1.svg" },
+        { "id": "p2", "name": "Michelin Guide",        "logoUrl": "/images/partner-2.svg" }
+      ]
+    },
+    "faq": {
+      "sectionTitle": "Frequently Asked Questions",
+      "items": [
+        { "id": "f1", "question": "What time is check-in/check-out?",            "answer": "Check-in from 3 PM, check-out by 11 AM. Early/late available on request." },
+        { "id": "f2", "question": "Is breakfast included?",                      "answer": "Breakfast is included in the Deluxe, Superior, and Suite rates." },
+        { "id": "f3", "question": "Do you accommodate events or private dining?", "answer": "Yes — our private dining room seats up to 20 guests. Contact us for arrangements." }
+      ]
+    },
+    "about": {
+      "sectionTitle": "Our Story",
+      "body": "Built in 1847 and painstakingly restored in 2010, The Alderton preserves its original Georgian architecture while offering every modern comfort. We are family-owned and independently operated.",
+      "imageUrl": "/images/about.jpg", "imageAlt": "Hotel exterior", "imagePosition": "left"
+    },
+    "ctaBanner": {
+      "headline": "Reserve Your Room Today",
+      "subtext": "Complimentary champagne on arrival for stays of 3 nights or more.",
+      "cta": { "label": "Book a Stay", "href": "#booking" }
+    },
+    "booking": {
+      "sectionTitle": "Make a Reservation",
+      "sectionSubtitle": "Select your room and preferred dates and our team will confirm within 4 hours.",
+      "services": [
+        { "id": "deluxe",     "label": "Deluxe Room — from £280/night" },
+        { "id": "superior",   "label": "Superior Room — from £350/night" },
+        { "id": "suite",      "label": "Mayfair Suite — from £650/night" },
+        { "id": "penthouse",  "label": "Penthouse — from £1,200/night" }
+      ],
+      "apiEndpoint": "/api/booking"
+    },
+    "contact": { "sectionTitle": "Contact the Hotel", "apiEndpoint": "/api/contact" },
+    "pricing": null,
+    "team": null,
+    "menu": null,
+    "schedule": null,
+    "openingHours": null,
+    "beforeAfter": null,
+    "footer": {
+      "linkGroups": [
+        { "heading": "Stay",    "links": [{ "label": "Rooms", "href": "#services" }, { "label": "Book", "href": "#booking" }] },
+        { "heading": "Explore", "links": [{ "label": "Gallery", "href": "#gallery" }, { "label": "About", "href": "#about" }] }
+      ],
+      "copyrightText": "© 2026 The Alderton. All rights reserved."
+    }
+  }
+}

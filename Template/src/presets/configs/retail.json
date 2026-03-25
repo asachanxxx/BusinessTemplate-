@@ -1,0 +1,146 @@
+{
+  "_comment": "Retail shop / boutique starter config (products variant, opening hours)",
+  "businessType": "retail",
+  "business": {
+    "name": "Bloom Boutique",
+    "tagline": "Curated Style, Every Season.",
+    "logoText": "Bloom",
+    "contactInfo": {
+      "phone": "+1 (555) 876-5432",
+      "email": "hello@bloomboutique.example.com",
+      "address": "22 Oak Street, Portland, OR 97201",
+      "mapEmbedUrl": ""
+    },
+    "socialLinks": [
+      { "platform": "instagram", "url": "https://instagram.com/" },
+      { "platform": "pinterest", "url": "https://pinterest.com/" }
+    ]
+  },
+  "nav": {
+    "items": [
+      { "label": "Shop",         "href": "#services" },
+      { "label": "New In",       "href": "#gallery" },
+      { "label": "About",        "href": "#about" },
+      { "label": "Hours",        "href": "#opening-hours" }
+    ],
+    "ctaButton": { "label": "Visit Us", "href": "#opening-hours" }
+  },
+  "seo": {
+    "title": "Bloom Boutique — Curated Fashion Portland",
+    "description": "Independent fashion boutique in Portland offering curated women's clothing and accessories.",
+    "keywords": "boutique, fashion, clothing, accessories, Portland, women's fashion"
+  },
+  "sections": {
+    "hero": true, "services": true, "about": true, "ctaBanner": true,
+    "testimonials": true, "gallery": true, "faq": false, "partners": true,
+    "pricing": false, "booking": false, "contact": true, "map": true,
+    "team": false, "menu": false, "schedule": false, "openingHours": true, "beforeAfter": false
+  },
+  "sectionOrder": ["hero","services","gallery","testimonials","partners","openingHours","about","ctaBanner","contact","map"],
+  "content": {
+    "hero": {
+      "headline": "Style That Speaks for You",
+      "subheadline": "An independent boutique featuring curated womenswear, jewellery, and accessories — new arrivals every week.",
+      "primaryCta":   { "label": "Shop Now",      "href": "#services" },
+      "secondaryCta": { "label": "New Arrivals",  "href": "#gallery" },
+      "slides": [
+        { "imageUrl": "/images/hero-1.jpg", "imageAlt": "Boutique storefront" },
+        { "imageUrl": "/images/hero-2.jpg", "imageAlt": "Spring collection display" }
+      ]
+    },
+    "services": {
+      "sectionTitle": "Featured Products",
+      "sectionSubtitle": "Handpicked pieces you won't find anywhere else.",
+      "variant": "products",
+      "items": [
+        {
+          "id": "dress1", "title": "Linen Wrap Dress",
+          "description": "Easy-wear midi wrap dress in 100% European linen. Sizes XS–XL.",
+          "price": "$129",
+          "tags": ["New In", "Sustainable"],
+          "imageUrl": "/images/product-1.jpg"
+        },
+        {
+          "id": "jacket1", "title": "Oversized Denim Jacket",
+          "description": "Vintage-washed denim — a perfect layer over anything.",
+          "price": "$189",
+          "tags": ["Bestseller"],
+          "imageUrl": "/images/product-2.jpg"
+        },
+        {
+          "id": "bag1", "title": "Leather Tote Bag",
+          "description": "Full-grain leather tote with internal organisation — handmade in Italy.",
+          "price": "$245",
+          "tags": ["Handmade", "Limited"],
+          "imageUrl": "/images/product-3.jpg"
+        },
+        {
+          "id": "earrings1", "title": "Gold Hoop Earrings",
+          "description": "Chunky 18k gold-plated brass hoops — bold, minimal, versatile.",
+          "price": "$65",
+          "tags": ["New In"],
+          "imageUrl": "/images/product-4.jpg"
+        }
+      ]
+    },
+    "gallery": {
+      "sectionTitle": "New Arrivals",
+      "items": [
+        { "id": "g1", "imageUrl": "/images/gallery-1.jpg", "alt": "Spring lookbook 1" },
+        { "id": "g2", "imageUrl": "/images/gallery-2.jpg", "alt": "Spring lookbook 2" },
+        { "id": "g3", "imageUrl": "/images/gallery-3.jpg", "alt": "Accessories display" }
+      ]
+    },
+    "openingHours": {
+      "sectionTitle": "Visit Us",
+      "holidayNotice": "Holiday hours may vary — follow us on Instagram for updates.",
+      "days": {
+        "mon": "closed",
+        "tue": { "open": "10:00 AM", "close": "6:00 PM" },
+        "wed": { "open": "10:00 AM", "close": "6:00 PM" },
+        "thu": { "open": "10:00 AM", "close": "7:00 PM" },
+        "fri": { "open": "10:00 AM", "close": "7:00 PM" },
+        "sat": { "open": "9:30 AM",  "close": "6:00 PM" },
+        "sun": { "open": "11:00 AM", "close": "5:00 PM" }
+      }
+    },
+    "testimonials": {
+      "sectionTitle": "What Customers Say",
+      "items": [
+        { "id": "te1", "quote": "My favourite boutique in Portland. Always find something beautiful and unique.", "name": "Claire T.", "rating": 5 },
+        { "id": "te2", "quote": "The linen wrap dress is the best thing I've bought this year. Perfect fit!", "name": "Hannah B.", "rating": 5 }
+      ]
+    },
+    "partners": {
+      "sectionTitle": "Brands We Carry",
+      "items": [
+        { "id": "p1", "name": "Loom & Thread",  "logoUrl": "/images/partner-1.svg" },
+        { "id": "p2", "name": "Casa Artigiana",  "logoUrl": "/images/partner-2.svg" }
+      ]
+    },
+    "about": {
+      "sectionTitle": "About Bloom",
+      "body": "Bloom opened in 2018 with a simple belief: fashion should be thoughtful. We stock independent and sustainable labels and help every customer find pieces they'll love for years.",
+      "imageUrl": "/images/about.jpg", "imageAlt": "Inside the boutique", "imagePosition": "right"
+    },
+    "ctaBanner": {
+      "headline": "New Collection — In Store Now",
+      "subtext": "Sign up to the newsletter for early access and exclusive member offers.",
+      "cta": { "label": "Get Early Access", "href": "#contact" }
+    },
+    "contact": { "sectionTitle": "Get in Touch", "apiEndpoint": "/api/contact" },
+    "pricing": null,
+    "booking": null,
+    "team": null,
+    "menu": null,
+    "schedule": null,
+    "beforeAfter": null,
+    "footer": {
+      "linkGroups": [
+        { "heading": "Shop",  "links": [{ "label": "Featured", "href": "#services" }, { "label": "New Arrivals", "href": "#gallery" }] },
+        { "heading": "Visit", "links": [{ "label": "Hours", "href": "#opening-hours" }, { "label": "Contact", "href": "#contact" }] }
+      ],
+      "copyrightText": "© 2026 Bloom Boutique. All rights reserved."
+    }
+  }
+}

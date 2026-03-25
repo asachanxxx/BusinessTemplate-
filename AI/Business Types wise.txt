@@ -1,0 +1,153 @@
+🔷 1. One Template + Feature Toggle Concept
+
+Build a single generic website template and control behavior using a configuration-driven system.
+
+Each business instance must:
+
+Enable/disable sections (modules)
+Adjust content
+Slightly adapt UI where needed
+
+The template must not be duplicated per business.
+Instead, use a feature toggle mechanism to turn sections ON/OFF and modify behavior.
+
+Examples of controllable modules:
+
+Booking
+Pricing
+Gallery
+Team
+Blog
+Menu (restaurant only)
+Listings (real estate replaced → not needed now)
+
+The system should allow:
+
+Reordering sections
+Hiding unused sections
+Switching between internal/external integrations (e.g., booking)
+🔷 2. Business Types + Required Features
+
+Define a businessType variable and map features accordingly.
+
+🍽 Restaurant / Café
+Menu section (critical)
+Table reservation / booking
+Opening hours
+Gallery (food images)
+Map
+💇 Salon / Barber
+Services + pricing
+Team (staff)
+Appointment booking
+Before/after gallery
+🏋️ Gym / Fitness
+Membership pricing
+Class schedule
+Trainer profiles
+Class booking
+🧹 Cleaning Service
+Service packages
+Quote request form (important)
+Testimonials
+🚗 Auto Service
+Services list
+Booking (repair slots)
+Contact + location
+🦷 Clinic / Dental
+Doctor profiles
+Services
+Appointment booking
+Certifications / trust
+📸 Photography
+Portfolio (main focus)
+Packages
+Booking
+🎓 Coaching / Academy
+Courses list
+Schedule
+Registration / booking
+🏨 Hotel / Guesthouse
+Room listings
+Availability booking
+Amenities
+Gallery
+Reviews
+🛒 Retail Shop
+Product showcase
+Categories
+Promotions
+Contact / location
+Optional simple order flow
+🔷 3. Business Type Variable (Core Driver)
+
+Introduce a businessType variable that drives:
+
+Section visibility
+Feature activation
+UI variations
+Theme selection
+
+This variable must act as the primary switch for template behavior.
+
+The system should allow:
+
+Default config per business type
+Ability to override per client
+🔷 4. Theme System (Very Important)
+
+Define a theme configuration per business type.
+
+Each theme should control:
+
+Primary & secondary colors
+Typography (font family)
+Button styles
+Section styling (soft, bold, luxury, minimal, etc.)
+Example Theme Directions
+🍽 Restaurant
+Warm colors (red, orange, brown)
+Bold fonts
+Rich imagery
+💇 Salon
+Elegant colors (black, gold, pastel)
+Stylish fonts
+Clean spacing
+🏋️ Gym
+Dark + strong colors (black, red)
+Bold, heavy typography
+🧹 Cleaning
+Light colors (blue, white)
+Clean, minimal style
+🚗 Auto Service
+Industrial tones (dark blue, gray)
+Strong, practical UI
+🦷 Clinic
+White + blue
+Clean, medical feel
+High readability
+📸 Photography
+Minimal (black/white)
+Focus on images
+Very low UI noise
+🎓 Coaching
+Friendly colors (blue, green)
+Structured layout
+🏨 Hotel
+Premium feel (dark, gold, beige)
+Spacious layout
+🛒 Retail
+Bright + modern
+Flexible depending on brand
+🔥 Final Instruction
+
+Design the system so that:
+
+👉 Template = fixed
+👉 Behavior = driven by config (businessType + features + theme)
+
+The goal is:
+
+One system
+Multiple business outputs
+Easy onboarding of new business types without redesign

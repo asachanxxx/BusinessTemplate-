@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary:         #2563eb;
+  --color-primary-light:   #3b82f6;
+  --color-primary-dark:    #1d4ed8;
+  --color-secondary:       #7c3aed;
+  --color-secondary-light: #8b5cf6;
+  --color-secondary-dark:  #6d28d9;
+  --color-accent:          #f59e0b;
+  --color-accent-light:    #fbbf24;
+  --color-accent-dark:     #d97706;
+  --color-bg:              #ffffff;
+  --color-bg-alt:          #f8fafc;
+  --color-surface:         #f1f5f9;
+  --color-border:          #e2e8f0;
+  --color-text:            #0f172a;
+  --color-text-muted:      #64748b;
+  --color-text-inverse:    #ffffff;
+  --font-sans:    "Inter", system-ui, sans-serif;
+  --font-heading: "Inter", system-ui, sans-serif;
+  --section-padding-y: 5rem;
+  --container-max:     1280px;
+  --container-px:      1.5rem;
+  --radius:    0.5rem;
+  --radius-lg: 1rem;
+  --shadow-card:     0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-elevated: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+@theme inline {
+  --color-primary:         var(--color-primary);
+  --color-primary-light:   var(--color-primary-light);
+  --color-primary-dark:    var(--color-primary-dark);
+  --color-secondary:       var(--color-secondary);
+  --color-secondary-light: var(--color-secondary-light);
+  --color-secondary-dark:  var(--color-secondary-dark);
+  --color-accent:          var(--color-accent);
+  --color-accent-light:    var(--color-accent-light);
+  --color-accent-dark:     var(--color-accent-dark);
+  --color-bg:              var(--color-bg);
+  --color-bg-alt:          var(--color-bg-alt);
+  --color-surface:         var(--color-surface);
+  --color-border:          var(--color-border);
+  --color-text:            var(--color-text);
+  --color-text-muted:      var(--color-text-muted);
+  --color-text-inverse:    var(--color-text-inverse);
+  --font-family-sans:      var(--font-sans);
+  --font-family-heading:   var(--font-heading);
+  --radius-DEFAULT:        var(--radius);
+  --radius-lg:             var(--radius-lg);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body { margin: 0; min-height: 100vh; }
+#root { width: 100%; min-height: 100vh; }

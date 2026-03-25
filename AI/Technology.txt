@@ -1,0 +1,9 @@
+Use React (with Vite) → fast, flexible
+Use TypeScript
+Use Tailwind CSS for layout & components (Tailwind + Shadcn)
+Use Axios (or fetch) for API calls
+Use Component-Based Structure
+Reusable sections (modular UI)
+Content must be dynamic (via JSON or props)
+Easy to customize per business
+Use a full-width layout (edge-to-edge), not boxed

@@ -1,0 +1,323 @@
+{
+  "_comment": "Generic reusable SMB website template config. Swap values per business.",
+
+  "_businessTypeOptions": "generic | restaurant | salon | gym | cleaning | auto | clinic | photography | coaching | hotel | retail",
+  "businessType": "generic",
+
+  "apiConfigUrl": "",
+
+  "business": {
+    "name": "Business Name",
+    "tagline": "Your tagline goes here",
+    "logoUrl": "",
+    "logoText": "BrandName",
+    "contactInfo": {
+      "phone": "+1 (555) 000-0000",
+      "email": "hello@businessname.com",
+      "address": "123 Main St, City, State 00000",
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!..."
+    },
+    "socialLinks": [
+      { "platform": "facebook",  "url": "https://facebook.com/yourpage" },
+      { "platform": "instagram", "url": "https://instagram.com/yourpage" },
+      { "platform": "twitter",   "url": "https://twitter.com/yourpage" }
+    ]
+  },
+
+  "nav": {
+    "items": [
+      { "label": "Home",       "href": "#home" },
+      { "label": "Services",   "href": "#services" },
+      { "label": "About",      "href": "#about" },
+      { "label": "Pricing",    "href": "#pricing" },
+      {
+        "label": "More",
+        "href": "#",
+        "children": [
+          { "label": "Gallery",       "href": "#gallery" },
+          { "label": "Testimonials",  "href": "#testimonials" },
+          { "label": "FAQ",           "href": "#faq" }
+        ]
+      },
+      { "label": "Contact",    "href": "#contact" }
+    ],
+    "ctaButton": { "label": "Book Now", "href": "#booking" }
+  },
+
+  "seo": {
+    "title": "Business Name | Your Tagline",
+    "description": "A short description of what this business does (150–160 chars).",
+    "keywords": "keyword1, keyword2, keyword3",
+    "ogImage": "/og-image.jpg",
+    "canonicalUrl": "https://www.yoursite.com"
+  },
+
+  "sections": {
+    "hero":         true,
+    "services":     true,
+    "about":        true,
+    "ctaBanner":    true,
+    "testimonials": true,
+    "gallery":      true,
+    "faq":          true,
+    "partners":     true,
+    "pricing":      true,
+    "booking":      true,
+    "contact":      true,
+    "map":          true,
+    "team":         false,
+    "menu":         false,
+    "schedule":     false,
+    "openingHours": false,
+    "beforeAfter":  false
+  },
+
+  "content": {
+    "hero": {
+      "headline":    "Welcome to Business Name",
+      "subheadline": "The best place to get what you need, done right.",
+      "primaryCta":   { "label": "Get Started",    "href": "#booking" },
+      "secondaryCta": { "label": "Learn More",     "href": "#services" },
+      "autoPlayInterval": 5000,
+      "slides": [
+        { "imageUrl": "/images/hero-1.jpg", "imageAlt": "Hero image 1" },
+        { "imageUrl": "/images/hero-2.jpg", "imageAlt": "Hero image 2" },
+        { "imageUrl": "/images/hero-3.jpg", "imageAlt": "Hero image 3" }
+      ]
+    },
+
+    "services": {
+      "sectionTitle":    "Our Services",
+      "sectionSubtitle": "Everything you need, all in one place.",
+      "items": [
+        {
+          "id": "service-1",
+          "icon": "Star",
+          "title": "Service One",
+          "description": "A brief description of this service and its key benefits for the customer.",
+          "href": "#booking"
+        },
+        {
+          "id": "service-2",
+          "icon": "Zap",
+          "title": "Service Two",
+          "description": "A brief description of this service and its key benefits for the customer.",
+          "href": "#booking"
+        },
+        {
+          "id": "service-3",
+          "icon": "Shield",
+          "title": "Service Three",
+          "description": "A brief description of this service and its key benefits for the customer.",
+          "href": "#booking"
+        }
+      ]
+    },
+
+    "about": {
+      "sectionTitle":    "About Us",
+      "sectionSubtitle": "Who we are and why customers trust us",
+      "body": "We are a dedicated team of professionals committed to delivering outstanding results. With years of experience and a passion for what we do, we bring expertise and care to every project.",
+      "imageUrl":      "/images/about.jpg",
+      "imageAlt":      "Our team at work",
+      "imagePosition": "right",
+      "stats": [
+        { "value": "10+",  "label": "Years Experience" },
+        { "value": "500+", "label": "Happy Clients" },
+        { "value": "50+",  "label": "Team Members" },
+        { "value": "4.9",  "label": "Avg. Rating" }
+      ]
+    },
+
+    "ctaBanner": {
+      "headline": "Ready to get started?",
+      "subtext":  "Join hundreds of satisfied customers. Book your appointment today.",
+      "cta":      { "label": "Book Now", "href": "#booking" },
+      "variant":  "primary"
+    },
+
+    "testimonials": {
+      "sectionTitle":    "What Our Clients Say",
+      "sectionSubtitle": "Real feedback from real customers",
+      "autoPlayInterval": 4000,
+      "items": [
+        {
+          "id": "t1",
+          "quote":   "Absolutely fantastic service! I couldn't be happier with the results. Highly recommend to anyone.",
+          "name":    "Jane Smith",
+          "role":    "Regular Customer",
+          "photoUrl": "/images/testimonial-1.jpg",
+          "rating":  5
+        },
+        {
+          "id": "t2",
+          "quote":   "Professional, friendly, and delivered exactly what they promised. I'll be coming back for sure.",
+          "name":    "Mark Johnson",
+          "role":    "Business Owner",
+          "photoUrl": "/images/testimonial-2.jpg",
+          "rating":  5
+        },
+        {
+          "id": "t3",
+          "quote":   "Great value for money. The team was communicative throughout and the end result exceeded my expectations.",
+          "name":    "Sarah Lee",
+          "role":    "Loyal Client",
+          "photoUrl": "/images/testimonial-3.jpg",
+          "rating":  4
+        }
+      ]
+    },
+
+    "gallery": {
+      "sectionTitle":    "Our Work",
+      "sectionSubtitle": "A glimpse of what we've done",
+      "items": [
+        { "id": "g1", "imageUrl": "/images/gallery-1.jpg", "alt": "Project 1" },
+        { "id": "g2", "imageUrl": "/images/gallery-2.jpg", "alt": "Project 2" },
+        { "id": "g3", "imageUrl": "/images/gallery-3.jpg", "alt": "Project 3" },
+        { "id": "g4", "imageUrl": "/images/gallery-4.jpg", "alt": "Project 4" },
+        { "id": "g5", "imageUrl": "/images/gallery-5.jpg", "alt": "Project 5" },
+        { "id": "g6", "imageUrl": "/images/gallery-6.jpg", "alt": "Project 6" }
+      ]
+    },
+
+    "faq": {
+      "sectionTitle":    "Frequently Asked Questions",
+      "sectionSubtitle": "Got questions? We've got answers.",
+      "items": [
+        {
+          "id": "faq-1",
+          "question": "How do I book an appointment?",
+          "answer": "You can book directly through our website using the booking form, or call us on the phone number above."
+        },
+        {
+          "id": "faq-2",
+          "question": "What areas do you serve?",
+          "answer": "We currently serve customers in the City area and surrounding suburbs within a 30-mile radius."
+        },
+        {
+          "id": "faq-3",
+          "question": "Do you offer refunds or cancellations?",
+          "answer": "Yes — cancellations made more than 24 hours in advance receive a full refund. Contact us to reschedule."
+        },
+        {
+          "id": "faq-4",
+          "question": "How long does a typical session take?",
+          "answer": "Most sessions take between 45 minutes and 1.5 hours depending on the service. We'll give you an accurate estimate at booking."
+        }
+      ]
+    },
+
+    "partners": {
+      "sectionTitle": "Our Partners & Certifications",
+      "items": [
+        { "id": "p1", "name": "Partner One",   "logoUrl": "/images/partner-1.png" },
+        { "id": "p2", "name": "Partner Two",   "logoUrl": "/images/partner-2.png" },
+        { "id": "p3", "name": "Partner Three", "logoUrl": "/images/partner-3.png" },
+        { "id": "p4", "name": "Partner Four",  "logoUrl": "/images/partner-4.png" }
+      ]
+    },
+
+    "pricing": {
+      "sectionTitle":    "Pricing & Packages",
+      "sectionSubtitle": "Transparent pricing with no hidden fees",
+      "plans": [
+        {
+          "id": "basic",
+          "name": "Basic",
+          "price": "$49",
+          "period": "/ session",
+          "description": "Perfect for individuals getting started.",
+          "features": [
+            { "text": "1 service included",     "included": true },
+            { "text": "Email support",           "included": true },
+            { "text": "Priority booking",        "included": false },
+            { "text": "Dedicated account rep",   "included": false }
+          ],
+          "cta": { "label": "Get Started", "href": "#booking" },
+          "featured": false
+        },
+        {
+          "id": "standard",
+          "name": "Standard",
+          "price": "$99",
+          "period": "/ session",
+          "description": "Most popular choice for regular customers.",
+          "features": [
+            { "text": "3 services included",     "included": true },
+            { "text": "Email & phone support",   "included": true },
+            { "text": "Priority booking",        "included": true },
+            { "text": "Dedicated account rep",   "included": false }
+          ],
+          "cta": { "label": "Get Started", "href": "#booking" },
+          "featured": true
+        },
+        {
+          "id": "premium",
+          "name": "Premium",
+          "price": "$199",
+          "period": "/ session",
+          "description": "Full access with a dedicated team.",
+          "features": [
+            { "text": "Unlimited services",      "included": true },
+            { "text": "24/7 support",            "included": true },
+            { "text": "Priority booking",        "included": true },
+            { "text": "Dedicated account rep",   "included": true }
+          ],
+          "cta": { "label": "Get Started", "href": "#booking" },
+          "featured": false
+        }
+      ]
+    },
+
+    "booking": {
+      "sectionTitle":    "Book an Appointment",
+      "sectionSubtitle": "Choose a date, pick a service, and we'll confirm within 1 hour.",
+      "apiEndpoint":     "/api/bookings",
+      "services": [
+        { "id": "service-1", "label": "Service One" },
+        { "id": "service-2", "label": "Service Two" },
+        { "id": "service-3", "label": "Service Three" }
+      ]
+    },
+
+    "contact": {
+      "sectionTitle":    "Get In Touch",
+      "sectionSubtitle": "We'd love to hear from you. Send us a message and we'll get back to you shortly.",
+      "apiEndpoint":     "/api/contact"
+    },
+
+    "footer": {
+      "linkGroups": [
+        {
+          "heading": "Company",
+          "links": [
+            { "label": "About Us",   "href": "#about" },
+            { "label": "Services",   "href": "#services" },
+            { "label": "Pricing",    "href": "#pricing" }
+          ]
+        },
+        {
+          "heading": "Quick Links",
+          "links": [
+            { "label": "Gallery",      "href": "#gallery" },
+            { "label": "Testimonials", "href": "#testimonials" },
+            { "label": "FAQ",          "href": "#faq" },
+            { "label": "Book Now",     "href": "#booking" }
+          ]
+        },
+        {
+          "heading": "Contact",
+          "links": [
+            { "label": "Contact Us",  "href": "#contact" }
+          ]
+        }
+      ],
+      "copyrightText": "© 2026 Business Name. All rights reserved.",
+      "legalLinks": [
+        { "label": "Privacy Policy",   "href": "/privacy" },
+        { "label": "Terms of Service", "href": "/terms" }
+      ]
+    }
+  }
+}

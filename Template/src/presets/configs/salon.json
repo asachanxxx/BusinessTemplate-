@@ -1,0 +1,169 @@
+{
+  "_comment": "Salon / barber shop starter — copy to siteConfig.json and fill in real content",
+  "businessType": "salon",
+  "business": {
+    "name": "Luxe Studio",
+    "tagline": "Where Style Meets Precision",
+    "logoText": "Luxe Studio",
+    "contactInfo": {
+      "phone": "+1 (555) 234-5678",
+      "email": "book@luxestudio.example.com",
+      "address": "18 Fashion Ave, Los Angeles, CA 90001",
+      "mapEmbedUrl": ""
+    },
+    "socialLinks": [
+      { "platform": "instagram", "url": "https://instagram.com/" },
+      { "platform": "tiktok",    "url": "https://tiktok.com/" }
+    ]
+  },
+  "nav": {
+    "items": [
+      { "label": "Services",    "href": "#services" },
+      { "label": "Team",        "href": "#team" },
+      { "label": "Gallery",     "href": "#gallery" },
+      { "label": "Pricing",     "href": "#pricing" },
+      { "label": "Contact",     "href": "#contact" }
+    ],
+    "ctaButton": { "label": "Book Now", "href": "#booking" }
+  },
+  "seo": {
+    "title": "Luxe Studio — Premium Hair & Beauty Salon",
+    "description": "Expert hair styling, colouring, and beauty treatments in Los Angeles.",
+    "keywords": "hair salon, beauty, styling, colouring, Los Angeles"
+  },
+  "sections": {
+    "hero": true, "services": true, "about": true, "ctaBanner": true,
+    "testimonials": true, "gallery": true, "faq": true, "partners": false,
+    "pricing": true, "booking": true, "contact": true, "map": true,
+    "team": true, "menu": false, "schedule": false, "openingHours": true, "beforeAfter": true
+  },
+  "sectionOrder": ["hero","services","team","beforeAfter","gallery","pricing","testimonials","faq","openingHours","booking","contact","map"],
+  "content": {
+    "hero": {
+      "headline": "Your Best Look Starts Here",
+      "subheadline": "Expert colourists, master stylists, and a team obsessed with making you feel amazing.",
+      "primaryCta":  { "label": "Book an Appointment", "href": "#booking" },
+      "secondaryCta":{ "label": "View Our Work",       "href": "#gallery" },
+      "slides": [
+        { "imageUrl": "/images/hero-1.jpg", "imageAlt": "Salon interior" },
+        { "imageUrl": "/images/hero-2.jpg", "imageAlt": "Hair styling session" }
+      ]
+    },
+    "services": {
+      "sectionTitle": "Our Services",
+      "sectionSubtitle": "From precision cuts to full transformations.",
+      "variant": "services",
+      "items": [
+        { "id": "cut",    "icon": "Scissors", "title": "Haircut & Style",    "description": "Precision cuts tailored to your face shape and lifestyle." },
+        { "id": "colour", "icon": "Palette",  "title": "Colour & Highlights", "description": "Balayage, highlights, full colour, and toning services." },
+        { "id": "treat",  "icon": "Sparkles", "title": "Treatments",         "description": "Keratin, deep conditioning, and scalp health treatments." }
+      ]
+    },
+    "team": {
+      "sectionTitle": "Meet Our Stylists",
+      "sectionSubtitle": "Passionate experts dedicated to your transformation.",
+      "layout": "grid",
+      "items": [
+        { "id": "s1", "name": "Sophia Reyes",     "role": "Senior Colourist",  "bio": "10 years of colour artistry, specialising in balayage and vivid colour.", "photoUrl": "/images/team-1.jpg" },
+        { "id": "s2", "name": "Marcus Bennett",   "role": "Master Barber",     "bio": "Precision cuts, fades, and beard grooming with old-school barbering techniques.", "photoUrl": "/images/team-2.jpg" },
+        { "id": "s3", "name": "Isabella Torres",  "role": "Hair & Extensions", "bio": "Tape-in, fusion, and clip extensions for instant volume and length.", "photoUrl": "/images/team-3.jpg" }
+      ]
+    },
+    "beforeAfter": {
+      "sectionTitle": "The Transformation",
+      "sectionSubtitle": "See the difference our team can make.",
+      "pairs": [
+        { "id": "ba1", "beforeUrl": "/images/before-1.jpg", "afterUrl": "/images/after-1.jpg", "caption": "Full balayage transformation" },
+        { "id": "ba2", "beforeUrl": "/images/before-2.jpg", "afterUrl": "/images/after-2.jpg", "caption": "Men's fade and style" }
+      ]
+    },
+    "gallery": {
+      "sectionTitle": "Our Work",
+      "sectionSubtitle": "A glimpse into what we create every day.",
+      "items": [
+        { "id": "g1", "imageUrl": "/images/gallery-1.jpg", "alt": "Balayage result" },
+        { "id": "g2", "imageUrl": "/images/gallery-2.jpg", "alt": "Men's haircut" },
+        { "id": "g3", "imageUrl": "/images/gallery-3.jpg", "alt": "Colour transformation" }
+      ]
+    },
+    "pricing": {
+      "sectionTitle": "Pricing",
+      "sectionSubtitle": "Transparent, honest pricing with no surprises.",
+      "plans": [
+        {
+          "id": "cut", "name": "Cut & Style", "price": "$65", "description": "Shampoo, precision cut, and style.",
+          "features": [
+            { "text": "Consultation", "included": true },
+            { "text": "Shampoo & blowdry", "included": true },
+            { "text": "Colour", "included": false }
+          ],
+          "cta": { "label": "Book", "href": "#booking" }
+        },
+        {
+          "id": "colour", "name": "Colour Service", "price": "$120+", "featured": true, "description": "Full colour, toning, or balayage service.",
+          "features": [
+            { "text": "Colour consultation", "included": true },
+            { "text": "Full colour or highlights", "included": true },
+            { "text": "Blowdry & style", "included": true }
+          ],
+          "cta": { "label": "Book", "href": "#booking" }
+        }
+      ]
+    },
+    "testimonials": {
+      "sectionTitle": "Client Love",
+      "items": [
+        { "id": "t1", "quote": "Sophia transformed my hair — I've never felt more confident.", "name": "Emma L.", "rating": 5 },
+        { "id": "t2", "quote": "Best fade I've ever had. Marcus is a true artist.", "name": "Daniel K.", "rating": 5 }
+      ]
+    },
+    "openingHours": {
+      "sectionTitle": "Salon Hours",
+      "days": {
+        "mon": "closed",
+        "tue": { "open": "10:00 AM", "close": "7:00 PM" },
+        "wed": { "open": "10:00 AM", "close": "7:00 PM" },
+        "thu": { "open": "10:00 AM", "close": "8:00 PM" },
+        "fri": { "open": "10:00 AM", "close": "8:00 PM" },
+        "sat": { "open": "9:00 AM",  "close": "6:00 PM" },
+        "sun": { "open": "10:00 AM", "close": "5:00 PM" }
+      }
+    },
+    "faq": {
+      "sectionTitle": "FAQ",
+      "items": [
+        { "id": "f1", "question": "Do I need to book in advance?", "answer": "We recommend booking 48–72 hours ahead, especially for colour services." },
+        { "id": "f2", "question": "Do you offer consultations?",   "answer": "Yes, all colour bookings include a free consultation." }
+      ]
+    },
+    "about": {
+      "sectionTitle": "About Luxe Studio",
+      "body": "Founded in 2015, Luxe Studio is a boutique hair salon committed to delivering personalised, high-end services in a relaxed and welcoming atmosphere.",
+      "imageUrl": "/images/about.jpg", "imageAlt": "Salon interior", "imagePosition": "right"
+    },
+    "ctaBanner": {
+      "headline": "Ready for Your Best Hair Day?",
+      "cta": { "label": "Book an Appointment", "href": "#booking" }
+    },
+    "booking": {
+      "sectionTitle": "Book an Appointment",
+      "sectionSubtitle": "Choose your service and preferred stylist.",
+      "services": [
+        { "id": "cut",    "label": "Haircut & Style" },
+        { "id": "colour", "label": "Colour Service" },
+        { "id": "treat",  "label": "Treatment" }
+      ],
+      "apiEndpoint": "/api/booking"
+    },
+    "contact": { "sectionTitle": "Contact Us", "apiEndpoint": "/api/contact" },
+    "partners": { "items": [] },
+    "menu": null,
+    "schedule": null,
+    "footer": {
+      "linkGroups": [
+        { "heading": "Services", "links": [{ "label": "Services", "href": "#services" }, { "label": "Pricing", "href": "#pricing" }] }
+      ],
+      "copyrightText": "© 2026 Luxe Studio. All rights reserved."
+    }
+  }
+}

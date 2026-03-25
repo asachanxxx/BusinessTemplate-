@@ -1,0 +1,17 @@
+🔷 Core Sections (Almost every site MUST have)
+Header (Top Bar) 👉 Logo, navigation, CTA (Call / Book / Contact)
+Hero Section 👉 Hero Carousel with many images,  Big headline, value proposition, CTA
+Services / Offerings 👉 What the business provides (cards or list)
+Booking / Appointment Section 👉 For services
+About / Trust Section 👉 Who they are, experience, why trust them
+Testimonials / Reviews 👉 Customer feedback (very important for SMB)
+Call-To-Action (CTA) Section 👉 “Book now”, “Get quote”, “Contact us”
+Contact Section 👉 Form, phone, email, address
+Footer 👉 Links, contact info, social, legal
+
+🔷 High-Impact Sections (Strongly Recommended)
+Gallery / Portfolio 👉 Real work (before/after, projects)
+Pricing / Packages 👉 Clear offers (optional but powerful)
+FAQ 👉 Reduce customer doubts
+Map / Location 👉 Especially for local businesses
+Partners / Certifications 👉 Trust badges, logos

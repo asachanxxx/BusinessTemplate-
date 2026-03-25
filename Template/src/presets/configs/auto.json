@@ -1,0 +1,182 @@
+{
+  "_comment": "Auto detailing / repair shop starter config",
+  "businessType": "auto",
+  "business": {
+    "name": "MotorShine Auto",
+    "tagline": "Perfect Finish. Every Drive.",
+    "logoText": "MotorShine",
+    "contactInfo": {
+      "phone": "+1 (555) 987-6543",
+      "email": "service@motorshine.example.com",
+      "address": "301 Industrial Ave, Detroit, MI 48201",
+      "mapEmbedUrl": ""
+    },
+    "socialLinks": [
+      { "platform": "instagram", "url": "https://instagram.com/" },
+      { "platform": "facebook",  "url": "https://facebook.com/" }
+    ]
+  },
+  "nav": {
+    "items": [
+      { "label": "Services",    "href": "#services" },
+      { "label": "Results",     "href": "#before-after" },
+      { "label": "Pricing",     "href": "#pricing" },
+      { "label": "Hours",       "href": "#opening-hours" }
+    ],
+    "ctaButton": { "label": "Book a Detail", "href": "#booking" }
+  },
+  "seo": {
+    "title": "MotorShine Auto — Premium Detailing Detroit",
+    "description": "Professional auto detailing and paint correction in Detroit. Book your appointment online.",
+    "keywords": "auto detailing, car detailing, paint correction, Detroit, ceramic coating"
+  },
+  "sections": {
+    "hero": true, "services": true, "about": true, "ctaBanner": true,
+    "testimonials": true, "gallery": true, "faq": true, "partners": true,
+    "pricing": true, "booking": true, "contact": true, "map": true,
+    "team": false, "menu": false, "schedule": false, "openingHours": true, "beforeAfter": true
+  },
+  "sectionOrder": ["hero","services","beforeAfter","pricing","gallery","testimonials","partners","faq","openingHours","ctaBanner","booking","contact","map"],
+  "content": {
+    "hero": {
+      "headline": "Your Car Deserves the Best",
+      "subheadline": "Professional detailing, paint correction, and ceramic coating by Detroit's most trusted auto care team.",
+      "primaryCta":   { "label": "Book a Detail",  "href": "#booking" },
+      "secondaryCta": { "label": "See Results",     "href": "#before-after" },
+      "slides": [
+        { "imageUrl": "/images/hero-1.jpg", "imageAlt": "Freshly detailed sports car" }
+      ]
+    },
+    "services": {
+      "sectionTitle": "Our Services",
+      "sectionSubtitle": "From a quick wash to a full ceramic coating — we do it all.",
+      "variant": "services",
+      "items": [
+        { "id": "interior",  "icon": "Armchair",    "title": "Interior Detailing",   "description": "Deep vacuum, leather conditioning, steam cleaning, and odour removal." },
+        { "id": "exterior",  "icon": "Car",         "title": "Exterior Detailing",   "description": "Hand wash, clay bar, polish, and premium wax protection." },
+        { "id": "paint",     "icon": "Paintbrush",  "title": "Paint Correction",     "description": "Remove swirl marks, scratches, and oxidation for a showroom finish." },
+        { "id": "ceramic",   "icon": "Shield",      "title": "Ceramic Coating",      "description": "9H-rated nano-ceramic protection that lasts up to 5 years." }
+      ]
+    },
+    "beforeAfter": {
+      "sectionTitle": "Real Results",
+      "sectionSubtitle": "Drag the slider to see the transformation.",
+      "pairs": [
+        { "id": "ba1", "beforeUrl": "/images/before-1.jpg", "afterUrl": "/images/after-1.jpg", "caption": "Paint correction — black sedan" },
+        { "id": "ba2", "beforeUrl": "/images/before-2.jpg", "afterUrl": "/images/after-2.jpg", "caption": "Interior deep clean — SUV" }
+      ]
+    },
+    "pricing": {
+      "sectionTitle": "Detailing Packages",
+      "sectionSubtitle": "Transparent pricing with no hidden charges.",
+      "plans": [
+        {
+          "id": "express", "name": "Express", "price": "$99", "period": "once",
+          "description": "Quick refresh — hand wash, vacuum, and windows.",
+          "features": [
+            { "text": "Exterior hand wash",  "included": true },
+            { "text": "Interior vacuum",     "included": true },
+            { "text": "Window clean",        "included": true },
+            { "text": "Paint correction",    "included": false }
+          ],
+          "cta": { "label": "Book", "href": "#booking" }
+        },
+        {
+          "id": "full", "name": "Full Detail", "price": "$249", "period": "once", "featured": true,
+          "description": "Comprehensive inside and out — our bestseller.",
+          "features": [
+            { "text": "Full exterior detail",    "included": true },
+            { "text": "Full interior detail",    "included": true },
+            { "text": "Minor scratch removal",   "included": true },
+            { "text": "Ceramic coating",         "included": false }
+          ],
+          "cta": { "label": "Book", "href": "#booking" }
+        },
+        {
+          "id": "ceramic", "name": "Ceramic Pro", "price": "$799", "period": "once",
+          "description": "Ultimate protection — paint correction + 5-year ceramic coat.",
+          "features": [
+            { "text": "Full paint correction",    "included": true },
+            { "text": "9H ceramic coating",       "included": true },
+            { "text": "5-year warranty",          "included": true },
+            { "text": "Annual maintenance wash",  "included": true }
+          ],
+          "cta": { "label": "Book", "href": "#booking" }
+        }
+      ]
+    },
+    "gallery": {
+      "sectionTitle": "Our Work",
+      "items": [
+        { "id": "g1", "imageUrl": "/images/gallery-1.jpg", "alt": "Ceramic coated Mercedes" },
+        { "id": "g2", "imageUrl": "/images/gallery-2.jpg", "alt": "Paint corrected BMW" },
+        { "id": "g3", "imageUrl": "/images/gallery-3.jpg", "alt": "Clean interior" }
+      ]
+    },
+    "openingHours": {
+      "sectionTitle": "Opening Hours",
+      "days": {
+        "mon": { "open": "8:00 AM", "close": "6:00 PM" },
+        "tue": { "open": "8:00 AM", "close": "6:00 PM" },
+        "wed": { "open": "8:00 AM", "close": "6:00 PM" },
+        "thu": { "open": "8:00 AM", "close": "6:00 PM" },
+        "fri": { "open": "8:00 AM", "close": "6:00 PM" },
+        "sat": { "open": "9:00 AM", "close": "4:00 PM" },
+        "sun": "closed"
+      }
+    },
+    "testimonials": {
+      "sectionTitle": "Customer Reviews",
+      "items": [
+        { "id": "te1", "quote": "The ceramic coating on my car is unbelievable. Looks brand new after 2 years.", "name": "Mike D.", "rating": 5 },
+        { "id": "te2", "quote": "Booked the full detail online — done in 4 hours, looks incredible.", "name": "Sandra L.", "rating": 5 }
+      ]
+    },
+    "partners": {
+      "sectionTitle": "Products We Use",
+      "items": [
+        { "id": "p1", "name": "Ceramic Pro",   "logoUrl": "/images/partner-1.svg" },
+        { "id": "p2", "name": "Gyeon Quartz",  "logoUrl": "/images/partner-2.svg" }
+      ]
+    },
+    "faq": {
+      "sectionTitle": "FAQ",
+      "items": [
+        { "id": "f1", "question": "How long does a full detail take?",       "answer": "Typically 4–6 hours depending on vehicle size." },
+        { "id": "f2", "question": "Do I need to drop my car off?",           "answer": "Yes, we're a drop-off shop. We'll call when ready." },
+        { "id": "f3", "question": "How long does ceramic coating last?",     "answer": "Our coatings are rated 5 years with proper maintenance." }
+      ]
+    },
+    "about": {
+      "sectionTitle": "About MotorShine",
+      "body": "MotorShine has been Detroit's go-to for premium auto detailing since 2012. Our team are certified applicators for leading ceramic and paint protection brands.",
+      "imageUrl": "/images/about.jpg", "imageAlt": "Detailing team at work", "imagePosition": "right"
+    },
+    "ctaBanner": {
+      "headline": "Protect Your Investment",
+      "subtext": "Book a free consultation and get 10% off your first ceramic package.",
+      "cta": { "label": "Book a Detail", "href": "#booking" }
+    },
+    "booking": {
+      "sectionTitle": "Book an Appointment",
+      "sectionSubtitle": "Pick your service and preferred date — we'll confirm within the hour.",
+      "services": [
+        { "id": "express",  "label": "Express Detail — $99" },
+        { "id": "full",     "label": "Full Detail — $249" },
+        { "id": "ceramic",  "label": "Ceramic Pro — $799" }
+      ],
+      "apiEndpoint": "/api/booking"
+    },
+    "contact": { "sectionTitle": "Contact Us", "apiEndpoint": "/api/contact" },
+    "team": null,
+    "menu": null,
+    "schedule": null,
+    "footer": {
+      "linkGroups": [
+        { "heading": "Services", "links": [{ "label": "Detailing", "href": "#services" }, { "label": "Ceramic Coating", "href": "#services" }] },
+        { "heading": "Visit",    "links": [{ "label": "Hours", "href": "#opening-hours" }, { "label": "Book", "href": "#booking" }] }
+      ],
+      "copyrightText": "© 2026 MotorShine Auto. All rights reserved."
+    }
+  }
+}

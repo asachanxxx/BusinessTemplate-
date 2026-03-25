@@ -1,0 +1,177 @@
+{
+  "_comment": "Business / life coaching starter config",
+  "businessType": "coaching",
+  "business": {
+    "name": "Elevate Coaching",
+    "tagline": "Unlock Your Next Level.",
+    "logoText": "Elevate",
+    "contactInfo": {
+      "phone": "+1 (555) 444-5566",
+      "email": "hello@elevatecoaching.example.com",
+      "address": "Online + Austin, TX",
+      "mapEmbedUrl": ""
+    },
+    "socialLinks": [
+      { "platform": "linkedin",  "url": "https://linkedin.com/" },
+      { "platform": "instagram", "url": "https://instagram.com/" }
+    ]
+  },
+  "nav": {
+    "items": [
+      { "label": "Programs",     "href": "#services" },
+      { "label": "Coaches",      "href": "#team" },
+      { "label": "Pricing",      "href": "#pricing" },
+      { "label": "Schedule",     "href": "#schedule" }
+    ],
+    "ctaButton": { "label": "Start for Free", "href": "#booking" }
+  },
+  "seo": {
+    "title": "Elevate Coaching — Business & Life Coaching",
+    "description": "1:1 and group coaching programs for entrepreneurs, executives, and high-performers.",
+    "keywords": "business coaching, life coaching, executive coaching, online coaching, Austin"
+  },
+  "sections": {
+    "hero": true, "services": true, "about": true, "ctaBanner": true,
+    "testimonials": true, "gallery": false, "faq": true, "partners": true,
+    "pricing": true, "booking": true, "contact": true, "map": false,
+    "team": true, "menu": false, "schedule": true, "openingHours": false, "beforeAfter": false
+  },
+  "sectionOrder": ["hero","services","team","schedule","pricing","testimonials","partners","faq","about","ctaBanner","booking","contact"],
+  "content": {
+    "hero": {
+      "headline": "Stop Drifting. Start Leading.",
+      "subheadline": "Coaching programs that help founders, executives, and creatives build clarity, confidence, and momentum.",
+      "primaryCta":   { "label": "View Programs",    "href": "#services" },
+      "secondaryCta": { "label": "Free Discovery Call", "href": "#booking" },
+      "slides": [
+        { "imageUrl": "/images/hero-1.jpg", "imageAlt": "Coaching session" }
+      ]
+    },
+    "services": {
+      "sectionTitle": "Our Programs",
+      "sectionSubtitle": "Online and in-person coaching for every stage of your journey.",
+      "variant": "courses",
+      "items": [
+        { "id": "clarity",    "icon": "Compass",      "title": "Clarity Sprint",         "description": "4-session intensive to define goals, remove blocks, and build a 90-day action plan.", "duration": "4 sessions", "level": "beginner" },
+        { "id": "momentum",   "icon": "TrendingUp",   "title": "Momentum Program",       "description": "12-week deep-dive with weekly 1:1 sessions, tools, and accountability check-ins.",  "duration": "12 weeks",   "level": "intermediate" },
+        { "id": "executive",  "icon": "Briefcase",    "title": "Executive Leadership",    "description": "Tailored coaching for senior leaders navigating change, scale, or new roles.",        "duration": "6 months",   "level": "advanced" },
+        { "id": "group",      "icon": "Users",        "title": "Group Mastermind",        "description": "Monthly cohort of 8 peers — shared challenges, expert facilitation, peer support.", "duration": "Ongoing",    "level": "intermediate" }
+      ]
+    },
+    "team": {
+      "sectionTitle": "Your Coaches",
+      "sectionSubtitle": "Practitioners with real-world leadership experience.",
+      "layout": "grid",
+      "items": [
+        { "id": "tc1", "name": "Maya Collins",    "role": "Lead Coach & Founder",        "bio": "Former Fortune 500 VP turned ICF-certified coach. Specialises in executive transition.", "photoUrl": "/images/team-1.jpg",
+          "socialLinks": [{ "platform": "linkedin", "url": "https://linkedin.com/" }] },
+        { "id": "tc2", "name": "Daniel Park",     "role": "Business Strategy Coach",     "bio": "10-year startup founder. Guides entrepreneurs through growth and product-market fit.",   "photoUrl": "/images/team-2.jpg" },
+        { "id": "tc3", "name": "Amara Osei",      "role": "Mindset & Resilience Coach",  "bio": "Sport psychologist turned performance coach. Works with high-achievers on flow states.", "photoUrl": "/images/team-3.jpg" }
+      ]
+    },
+    "schedule": {
+      "sectionTitle": "Live Sessions",
+      "sectionSubtitle": "Join our open coaching calls — free for all members.",
+      "classes": [
+        { "id": "s1", "name": "Weekly Q&A Call",       "day": "mon", "time": "12:00 PM", "duration": "60 min", "trainer": "Maya Collins",   "level": "beginner" },
+        { "id": "s2", "name": "Strategy Deep-Dive",    "day": "wed", "time": "11:00 AM", "duration": "90 min", "trainer": "Daniel Park",    "level": "intermediate" },
+        { "id": "s3", "name": "Mindset Reset Session", "day": "fri", "time": "9:00 AM",  "duration": "45 min", "trainer": "Amara Osei",     "level": "beginner" },
+        { "id": "s4", "name": "Mastermind Cohort",     "day": "sat", "time": "10:00 AM", "duration": "120 min","trainer": "Maya Collins",   "level": "advanced" }
+      ]
+    },
+    "pricing": {
+      "sectionTitle": "Coaching Investment",
+      "sectionSubtitle": "Choose the level of support that fits your goals.",
+      "plans": [
+        {
+          "id": "starter", "name": "Starter", "price": "$497", "period": "/ 4 sessions",
+          "description": "The Clarity Sprint — ideal first step.",
+          "features": [
+            { "text": "4 x 1:1 sessions",           "included": true },
+            { "text": "Goal-setting workbook",       "included": true },
+            { "text": "Slack channel access",        "included": false },
+            { "text": "Accountability check-ins",    "included": false }
+          ],
+          "cta": { "label": "Enrol", "href": "#booking" }
+        },
+        {
+          "id": "growth", "name": "Growth", "price": "$1,997", "period": "/ 12 weeks", "featured": true,
+          "description": "Deep-dive 1:1 coaching with weekly sessions.",
+          "features": [
+            { "text": "12 x weekly 1:1 sessions",    "included": true },
+            { "text": "Full resource library",       "included": true },
+            { "text": "Slack channel access",        "included": true },
+            { "text": "Accountability check-ins",    "included": true }
+          ],
+          "cta": { "label": "Enrol", "href": "#booking" }
+        },
+        {
+          "id": "mastery", "name": "Mastery", "price": "$4,500", "period": "/ 6 months",
+          "description": "Executive program — full support for transformation.",
+          "features": [
+            { "text": "Bi-weekly 1:1 sessions",      "included": true },
+            { "text": "Unlimited async support",     "included": true },
+            { "text": "360 leadership assessment",   "included": true },
+            { "text": "Priority scheduling",         "included": true }
+          ],
+          "cta": { "label": "Apply", "href": "#booking" }
+        }
+      ]
+    },
+    "testimonials": {
+      "sectionTitle": "Client Results",
+      "items": [
+        { "id": "te1", "quote": "Doubled my revenue and finally stopped feeling overwhelmed. Maya is extraordinary.", "name": "Kate V., Founder", "rating": 5 },
+        { "id": "te2", "quote": "Daniel helped me see my business strategy with total clarity in just 4 sessions.", "name": "Ryan M., CEO", "rating": 5 }
+      ]
+    },
+    "partners": {
+      "sectionTitle": "As Seen In",
+      "items": [
+        { "id": "p1", "name": "Forbes",          "logoUrl": "/images/partner-1.svg" },
+        { "id": "p2", "name": "Entrepreneur Mag","logoUrl": "/images/partner-2.svg" }
+      ]
+    },
+    "faq": {
+      "sectionTitle": "Questions",
+      "items": [
+        { "id": "f1", "question": "Are sessions online or in-person?",     "answer": "All sessions run via Zoom. In-person days available for Mastery clients in Austin." },
+        { "id": "f2", "question": "What if I can't make a live session?",  "answer": "Sessions are recorded. You can replay anytime in your member portal." },
+        { "id": "f3", "question": "Is there a free intro call?",           "answer": "Yes — book a free 30-minute discovery call to see if coaching is right for you." }
+      ]
+    },
+    "about": {
+      "sectionTitle": "About Elevate",
+      "body": "Elevate was founded to make executive-level coaching accessible to ambitious people at every stage — from solo founder to senior leader.",
+      "imageUrl": "/images/about.jpg", "imageAlt": "Coaching team", "imagePosition": "right"
+    },
+    "ctaBanner": {
+      "headline": "Your Free Discovery Call Is Waiting",
+      "subtext": "30 minutes, no pressure. Find out if coaching is right for you.",
+      "cta": { "label": "Book Free Call", "href": "#booking" }
+    },
+    "booking": {
+      "sectionTitle": "Enrol or Book a Call",
+      "sectionSubtitle": "Select a program or request a free discovery call.",
+      "services": [
+        { "id": "discovery",  "label": "Free 30-min Discovery Call" },
+        { "id": "starter",    "label": "Clarity Sprint — $497" },
+        { "id": "growth",     "label": "Momentum Program — $1,997" },
+        { "id": "mastery",    "label": "Executive Mastery — $4,500" }
+      ],
+      "apiEndpoint": "/api/booking"
+    },
+    "contact": { "sectionTitle": "Contact Us", "apiEndpoint": "/api/contact" },
+    "gallery": null,
+    "menu": null,
+    "openingHours": null,
+    "beforeAfter": null,
+    "footer": {
+      "linkGroups": [
+        { "heading": "Programs", "links": [{ "label": "Coaching", "href": "#services" }, { "label": "Pricing", "href": "#pricing" }] },
+        { "heading": "Company",  "links": [{ "label": "Team", "href": "#team" }, { "label": "Book", "href": "#booking" }] }
+      ],
+      "copyrightText": "© 2026 Elevate Coaching. All rights reserved."
+    }
+  }
+}

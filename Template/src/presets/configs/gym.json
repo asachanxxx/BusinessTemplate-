@@ -1,0 +1,185 @@
+{
+  "_comment": "Gym / fitness centre starter",
+  "businessType": "gym",
+  "business": {
+    "name": "IronForge Gym",
+    "tagline": "Built Different. Train Different.",
+    "logoText": "IronForge",
+    "contactInfo": {
+      "phone": "+1 (555) 345-6789",
+      "email": "info@ironforge.example.com",
+      "address": "88 Steel Road, Chicago, IL 60601",
+      "mapEmbedUrl": ""
+    },
+    "socialLinks": [
+      { "platform": "instagram", "url": "https://instagram.com/" },
+      { "platform": "youtube",   "url": "https://youtube.com/" }
+    ]
+  },
+  "nav": {
+    "items": [
+      { "label": "Classes",   "href": "#schedule" },
+      { "label": "Trainers",  "href": "#team" },
+      { "label": "Pricing",   "href": "#pricing" },
+      { "label": "About",     "href": "#about" }
+    ],
+    "ctaButton": { "label": "Join Now", "href": "#booking" }
+  },
+  "seo": {
+    "title": "IronForge Gym — Transform Your Body",
+    "description": "State-of-the-art equipment, expert trainers, and classes for all levels in Chicago.",
+    "keywords": "gym, fitness, personal training, classes, Chicago"
+  },
+  "sections": {
+    "hero": true, "services": true, "about": true, "ctaBanner": true,
+    "testimonials": true, "gallery": true, "faq": true, "partners": true,
+    "pricing": true, "booking": true, "contact": true, "map": true,
+    "team": true, "menu": false, "schedule": true, "openingHours": true, "beforeAfter": false
+  },
+  "sectionOrder": ["hero","services","schedule","team","pricing","gallery","testimonials","partners","faq","openingHours","ctaBanner","booking","contact","map"],
+  "content": {
+    "hero": {
+      "headline": "Your Strongest Self Starts Here",
+      "subheadline": "World-class equipment, expert coaching, and a community that pushes you to be better.",
+      "primaryCta":  { "label": "View Membership",    "href": "#pricing" },
+      "secondaryCta":{ "label": "See Class Schedule", "href": "#schedule" },
+      "slides": [
+        { "imageUrl": "/images/hero-1.jpg", "imageAlt": "Gym floor" },
+        { "imageUrl": "/images/hero-2.jpg", "imageAlt": "Group class in action" }
+      ]
+    },
+    "services": {
+      "sectionTitle": "Everything You Need",
+      "sectionSubtitle": "From free weights to group classes — all under one roof.",
+      "variant": "services",
+      "items": [
+        { "id": "weights",  "icon": "Dumbbell",   "title": "Weight Training",    "description": "40,000 sq ft of free weights, machines, and functional training zones." },
+        { "id": "classes",  "icon": "Users",       "title": "Group Classes",      "description": "HIIT, yoga, spin, and more — 40+ classes a week led by expert coaches." },
+        { "id": "pt",       "icon": "UserCheck",   "title": "Personal Training",  "description": "One-on-one sessions with certified trainers to fast-track your goals." },
+        { "id": "recovery", "icon": "HeartPulse",  "title": "Recovery Zone",      "description": "Steam room, ice bath, and massage chairs to keep you at 100%." }
+      ]
+    },
+    "schedule": {
+      "sectionTitle": "Class Schedule",
+      "sectionSubtitle": "Find the perfect class for your level and goals.",
+      "classes": [
+        { "id": "c1", "name": "Morning HIIT",      "day": "mon", "time": "6:00 AM",  "duration": "45 min", "trainer": "Alex P.", "level": "intermediate" },
+        { "id": "c2", "name": "Power Yoga",        "day": "mon", "time": "9:00 AM",  "duration": "60 min", "trainer": "Lisa M.", "level": "beginner" },
+        { "id": "c3", "name": "Strength Circuit",  "day": "tue", "time": "7:00 AM",  "duration": "50 min", "trainer": "Jake R.", "level": "advanced" },
+        { "id": "c4", "name": "Spin Ride",         "day": "wed", "time": "6:30 AM",  "duration": "45 min", "trainer": "Sarah B.", "level": "intermediate" },
+        { "id": "c5", "name": "Core & Stretch",    "day": "thu", "time": "12:00 PM", "duration": "30 min", "trainer": "Tom H.", "level": "beginner" },
+        { "id": "c6", "name": "Athletic Bootcamp", "day": "fri", "time": "5:30 AM",  "duration": "60 min", "trainer": "Alex P.", "level": "advanced" },
+        { "id": "c7", "name": "Weekend Warrior",   "day": "sat", "time": "9:00 AM",  "duration": "75 min", "trainer": "Lisa M.", "level": "intermediate" }
+      ]
+    },
+    "team": {
+      "sectionTitle": "Our Trainers",
+      "sectionSubtitle": "Certified, passionate, and ready to coach you.",
+      "layout": "grid",
+      "items": [
+        { "id": "t1", "name": "Alex Peterson",  "role": "Head PT & HIIT Coach",    "bio": "NASM certified. Specialises in fat loss and athletic performance.", "photoUrl": "/images/trainer-1.jpg" },
+        { "id": "t2", "name": "Lisa Martinez",  "role": "Yoga & Mindfulness",      "bio": "200hr RYT with 8 years of teaching. Classes for all levels.", "photoUrl": "/images/trainer-2.jpg" },
+        { "id": "t3", "name": "Jake Rivera",    "role": "Strength & Conditioning",  "bio": "Former collegiate athlete, CSCS certified strength coach.", "photoUrl": "/images/trainer-3.jpg" }
+      ]
+    },
+    "pricing": {
+      "sectionTitle": "Membership Plans",
+      "sectionSubtitle": "Flexible options to fit every schedule and budget.",
+      "plans": [
+        {
+          "id": "basic", "name": "Basic", "price": "$29", "period": "/ month",
+          "description": "Gym floor access — perfect for solo training.",
+          "features": [
+            { "text": "Gym floor access", "included": true },
+            { "text": "Locker room & showers", "included": true },
+            { "text": "Group classes", "included": false },
+            { "text": "Personal training sessions", "included": false }
+          ],
+          "cta": { "label": "Join", "href": "#booking" }
+        },
+        {
+          "id": "pro", "name": "Pro", "price": "$59", "period": "/ month", "featured": true,
+          "description": "Full access including unlimited classes.",
+          "features": [
+            { "text": "Gym floor access", "included": true },
+            { "text": "Locker room & showers", "included": true },
+            { "text": "Unlimited group classes", "included": true },
+            { "text": "Recovery zone access", "included": true }
+          ],
+          "cta": { "label": "Join", "href": "#booking" }
+        }
+      ]
+    },
+    "gallery": {
+      "sectionTitle": "See the Space",
+      "items": [
+        { "id": "g1", "imageUrl": "/images/gallery-1.jpg", "alt": "Gym floor" },
+        { "id": "g2", "imageUrl": "/images/gallery-2.jpg", "alt": "Group class" },
+        { "id": "g3", "imageUrl": "/images/gallery-3.jpg", "alt": "Personal training session" }
+      ]
+    },
+    "openingHours": {
+      "sectionTitle": "Gym Hours",
+      "days": {
+        "mon": { "open": "5:00 AM", "close": "11:00 PM" },
+        "tue": { "open": "5:00 AM", "close": "11:00 PM" },
+        "wed": { "open": "5:00 AM", "close": "11:00 PM" },
+        "thu": { "open": "5:00 AM", "close": "11:00 PM" },
+        "fri": { "open": "5:00 AM", "close": "10:00 PM" },
+        "sat": { "open": "7:00 AM", "close": "8:00 PM" },
+        "sun": { "open": "8:00 AM", "close": "7:00 PM" }
+      }
+    },
+    "testimonials": {
+      "sectionTitle": "Member Results",
+      "items": [
+        { "id": "t1", "quote": "Lost 20 lbs in 3 months. The trainers here are absolutely incredible.", "name": "Chris W.", "rating": 5 },
+        { "id": "t2", "quote": "Best gym in Chicago. Clean, well-equipped, and amazing community.", "name": "Amy R.", "rating": 5 }
+      ]
+    },
+    "partners": {
+      "sectionTitle": "Our Partners",
+      "items": [
+        { "id": "p1", "name": "Nike Training Club", "logoUrl": "/images/partner-1.svg" },
+        { "id": "p2", "name": "Precision Nutrition", "logoUrl": "/images/partner-2.svg" }
+      ]
+    },
+    "faq": {
+      "sectionTitle": "FAQ",
+      "items": [
+        { "id": "f1", "question": "Is there a joining fee?",    "answer": "No joining fee — just your monthly membership." },
+        { "id": "f2", "question": "Can I freeze my membership?", "answer": "Yes, you can freeze for up to 2 months per year." }
+      ]
+    },
+    "about": {
+      "sectionTitle": "About IronForge",
+      "body": "IronForge opened in 2018 with a simple mission: give every person the tools, coaching, and community to transform their body and mind.",
+      "imageUrl": "/images/about.jpg", "imageAlt": "Gym interior", "imagePosition": "left"
+    },
+    "ctaBanner": {
+      "headline": "Start Your Free 7-Day Trial",
+      "subtext": "No commitment. Cancel anytime.",
+      "cta": { "label": "Claim Free Trial", "href": "#booking" }
+    },
+    "booking": {
+      "sectionTitle": "Join IronForge",
+      "sectionSubtitle": "Select your membership and we'll get you started.",
+      "services": [
+        { "id": "basic",  "label": "Basic Membership — $29/mo" },
+        { "id": "pro",    "label": "Pro Membership — $59/mo" },
+        { "id": "trial",  "label": "Free 7-Day Trial" }
+      ],
+      "apiEndpoint": "/api/booking"
+    },
+    "contact": { "sectionTitle": "Contact Us", "apiEndpoint": "/api/contact" },
+    "menu": null,
+    "beforeAfter": null,
+    "footer": {
+      "linkGroups": [
+        { "heading": "Train",  "links": [{ "label": "Classes", "href": "#schedule" }, { "label": "Trainers", "href": "#team" }] },
+        { "heading": "Join",   "links": [{ "label": "Pricing", "href": "#pricing" }, { "label": "Sign Up", "href": "#booking" }] }
+      ],
+      "copyrightText": "© 2026 IronForge Gym. All rights reserved."
+    }
+  }
+}

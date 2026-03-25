@@ -1,0 +1,150 @@
+{
+  "_comment": "Photography studio starter config (dark theme, portfolio gallery)",
+  "businessType": "photography",
+  "business": {
+    "name": "Frame & Light Studio",
+    "tagline": "Moments Made Timeless.",
+    "logoText": "Frame & Light",
+    "contactInfo": {
+      "phone": "+1 (555) 667-8899",
+      "email": "hello@frameandlight.example.com",
+      "address": "12 Aperture Street, New York, NY 10001",
+      "mapEmbedUrl": ""
+    },
+    "socialLinks": [
+      { "platform": "instagram", "url": "https://instagram.com/" },
+      { "platform": "pinterest", "url": "https://pinterest.com/" }
+    ]
+  },
+  "nav": {
+    "items": [
+      { "label": "Portfolio",     "href": "#gallery" },
+      { "label": "Services",      "href": "#services" },
+      { "label": "Pricing",       "href": "#pricing" },
+      { "label": "About",         "href": "#about" }
+    ],
+    "ctaButton": { "label": "Book a Session", "href": "#booking" }
+  },
+  "seo": {
+    "title": "Frame & Light Studio — Photography New York",
+    "description": "Award-winning portrait, wedding, and commercial photography in New York City.",
+    "keywords": "photographer, portrait, wedding photography, commercial photography, New York"
+  },
+  "sections": {
+    "hero": true, "services": false, "about": true, "ctaBanner": true,
+    "testimonials": true, "gallery": true, "faq": true, "partners": false,
+    "pricing": true, "booking": true, "contact": true, "map": false,
+    "team": false, "menu": false, "schedule": false, "openingHours": false, "beforeAfter": false
+  },
+  "sectionOrder": ["hero","gallery","pricing","testimonials","about","faq","ctaBanner","booking","contact"],
+  "content": {
+    "hero": {
+      "headline": "Photography That Tells Your Story",
+      "subheadline": "Portrait, wedding, and commercial photography with a cinematic, editorial aesthetic.",
+      "primaryCta":   { "label": "View Portfolio",   "href": "#gallery" },
+      "secondaryCta": { "label": "Book a Session",   "href": "#booking" },
+      "slides": [
+        { "imageUrl": "/images/hero-1.jpg", "imageAlt": "Portrait session in studio" },
+        { "imageUrl": "/images/hero-2.jpg", "imageAlt": "Wedding couple outdoors" }
+      ]
+    },
+    "gallery": {
+      "sectionTitle": "Portfolio",
+      "sectionSubtitle": "A selection of recent work.",
+      "mode": "portfolio",
+      "items": [
+        { "id": "g1", "imageUrl": "/images/portfolio-1.jpg", "alt": "Bridal portrait", "caption": "Sophia & James — Hudson Valley Wedding" },
+        { "id": "g2", "imageUrl": "/images/portfolio-2.jpg", "alt": "Corporate headshot", "caption": "Executive Portraits — TechCorp NY" },
+        { "id": "g3", "imageUrl": "/images/portfolio-3.jpg", "alt": "Newborn session", "caption": "Miller Family — Newborn Story" },
+        { "id": "g4", "imageUrl": "/images/portfolio-4.jpg", "alt": "Fashion editorial", "caption": "Editorial — Spring/Summer Campaign" }
+      ]
+    },
+    "pricing": {
+      "sectionTitle": "Session Packages",
+      "sectionSubtitle": "Every package includes edited high-resolution images and a private online gallery.",
+      "plans": [
+        {
+          "id": "portrait", "name": "Portrait",  "price": "$350", "period": "session",
+          "description": "1-hour studio or outdoor portrait session — individuals and couples.",
+          "features": [
+            { "text": "1 hour session",              "included": true },
+            { "text": "20 edited images",            "included": true },
+            { "text": "Private online gallery",      "included": true },
+            { "text": "Print license",               "included": false }
+          ],
+          "cta": { "label": "Book", "href": "#booking" }
+        },
+        {
+          "id": "wedding", "name": "Wedding Day", "price": "$2,500", "period": "event", "featured": true,
+          "description": "Full wedding day coverage — ceremony to reception.",
+          "features": [
+            { "text": "8 hours coverage",            "included": true },
+            { "text": "350+ edited images",          "included": true },
+            { "text": "Engagement shoot",            "included": true },
+            { "text": "Premium print license",       "included": true }
+          ],
+          "cta": { "label": "Enquire", "href": "#booking" }
+        },
+        {
+          "id": "commercial", "name": "Commercial", "price": "$1,200", "period": "day",
+          "description": "Full-day brand shoot — product, team, or campaign content.",
+          "features": [
+            { "text": "8 hours studio / location",  "included": true },
+            { "text": "80+ edited images",          "included": true },
+            { "text": "Commercial license",         "included": true },
+            { "text": "2 outfit changes",           "included": true }
+          ],
+          "cta": { "label": "Book", "href": "#booking" }
+        }
+      ]
+    },
+    "testimonials": {
+      "sectionTitle": "What Clients Say",
+      "items": [
+        { "id": "te1", "quote": "Our wedding photos are absolutely stunning. We cry every time we look at them.", "name": "Emily & Marco R.", "rating": 5 },
+        { "id": "te2", "quote": "The commercial shoot exceeded all expectations — exactly the aesthetic we wanted.", "name": "Sarah T., Brand Director", "rating": 5 }
+      ]
+    },
+    "faq": {
+      "sectionTitle": "FAQ",
+      "items": [
+        { "id": "f1", "question": "How long until I receive my images?",     "answer": "Portrait sessions are delivered within 2 weeks; weddings within 6 weeks." },
+        { "id": "f2", "question": "Do you shoot on location?",               "answer": "Yes — studio, outdoor, and on-location shoots available across NY and NJ." },
+        { "id": "f3", "question": "Do you offer videography?",               "answer": "Not directly, but we work with trusted videographer partners — ask us." }
+      ]
+    },
+    "about": {
+      "sectionTitle": "About Frame & Light",
+      "body": "Founded by photographer Maya Chen, Frame & Light has documented over 200 weddings and hundreds of portrait and commercial projects across the US.",
+      "imageUrl": "/images/about.jpg", "imageAlt": "Photographer at work", "imagePosition": "right"
+    },
+    "ctaBanner": {
+      "headline": "Limited Dates Remaining for 2026",
+      "subtext": "Weddings and editorial dates book out months in advance.",
+      "cta": { "label": "Check Availability", "href": "#booking" }
+    },
+    "booking": {
+      "sectionTitle": "Book a Session",
+      "sectionSubtitle": "Tell us about your project and preferred date and we'll be in touch.",
+      "services": [
+        { "id": "portrait",    "label": "Portrait Session — $350" },
+        { "id": "wedding",     "label": "Wedding Day Coverage — $2,500" },
+        { "id": "commercial",  "label": "Commercial Day Rate — $1,200" }
+      ],
+      "apiEndpoint": "/api/booking"
+    },
+    "contact": { "sectionTitle": "Get in Touch", "apiEndpoint": "/api/contact" },
+    "team": null,
+    "menu": null,
+    "schedule": null,
+    "openingHours": null,
+    "beforeAfter": null,
+    "footer": {
+      "linkGroups": [
+        { "heading": "Work",    "links": [{ "label": "Portfolio", "href": "#gallery" }, { "label": "Pricing", "href": "#pricing" }] },
+        { "heading": "Connect", "links": [{ "label": "Book", "href": "#booking" }, { "label": "Contact", "href": "#contact" }] }
+      ],
+      "copyrightText": "© 2026 Frame & Light Studio. All rights reserved."
+    }
+  }
+}

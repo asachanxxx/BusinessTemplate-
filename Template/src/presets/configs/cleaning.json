@@ -1,0 +1,170 @@
+{
+  "_comment": "Cleaning service starter config",
+  "businessType": "cleaning",
+  "business": {
+    "name": "SparkClean Co.",
+    "tagline": "Spotless. Every Time.",
+    "logoText": "SparkClean",
+    "contactInfo": {
+      "phone": "+1 (555) 222-3344",
+      "email": "hello@sparkclean.example.com",
+      "address": "14 Fresh Lane, Seattle, WA 98101",
+      "mapEmbedUrl": ""
+    },
+    "socialLinks": [
+      { "platform": "facebook",  "url": "https://facebook.com/" },
+      { "platform": "instagram", "url": "https://instagram.com/" }
+    ]
+  },
+  "nav": {
+    "items": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Pricing",  "href": "#pricing" },
+      { "label": "Results",  "href": "#before-after" },
+      { "label": "FAQ",      "href": "#faq" }
+    ],
+    "ctaButton": { "label": "Get a Quote", "href": "#booking" }
+  },
+  "seo": {
+    "title": "SparkClean Co. — Professional Cleaning Seattle",
+    "description": "Residential and commercial cleaning services in Seattle. Eco-friendly products, satisfaction guaranteed.",
+    "keywords": "cleaning service, house cleaning, Seattle, maid service, deep clean"
+  },
+  "sections": {
+    "hero": true, "services": true, "about": true, "ctaBanner": true,
+    "testimonials": true, "gallery": true, "faq": true, "partners": true,
+    "pricing": true, "booking": true, "contact": true, "map": false,
+    "team": false, "menu": false, "schedule": false, "openingHours": false, "beforeAfter": true
+  },
+  "sectionOrder": ["hero","services","beforeAfter","pricing","testimonials","partners","faq","ctaBanner","booking","contact"],
+  "content": {
+    "hero": {
+      "headline": "A Spotless Home, Without the Hassle",
+      "subheadline": "Professional residential and commercial cleaning — eco-friendly products and a 100% satisfaction guarantee.",
+      "primaryCta":   { "label": "Get a Quote",  "href": "#booking" },
+      "secondaryCta": { "label": "Our Services", "href": "#services" },
+      "slides": [
+        { "imageUrl": "/images/hero-1.jpg", "imageAlt": "Sparkling clean kitchen" }
+      ]
+    },
+    "services": {
+      "sectionTitle": "Our Services",
+      "sectionSubtitle": "Tailored cleaning solutions for every need.",
+      "variant": "services",
+      "items": [
+        { "id": "standard",     "icon": "Home",        "title": "Standard Clean",      "description": "Regular maintenance cleaning for homes and apartments." },
+        { "id": "deep",         "icon": "Sparkles",    "title": "Deep Clean",          "description": "A thorough top-to-bottom clean — ideal for move-in/out." },
+        { "id": "commercial",   "icon": "Building2",   "title": "Commercial Cleaning", "description": "Office and retail space cleaning on flexible schedules." },
+        { "id": "eco",          "icon": "Leaf",        "title": "Eco-Friendly Option", "description": "All-natural, non-toxic products safe for kids and pets." }
+      ]
+    },
+    "beforeAfter": {
+      "sectionTitle": "See the Difference",
+      "sectionSubtitle": "Real results from real homes — drag the slider to compare.",
+      "pairs": [
+        { "id": "ba1", "beforeUrl": "/images/before-1.jpg", "afterUrl": "/images/after-1.jpg", "caption": "Kitchen deep clean" },
+        { "id": "ba2", "beforeUrl": "/images/before-2.jpg", "afterUrl": "/images/after-2.jpg", "caption": "Living room refresh" }
+      ]
+    },
+    "pricing": {
+      "sectionTitle": "Simple Pricing",
+      "sectionSubtitle": "No hidden fees. Choose the plan that fits.",
+      "plans": [
+        {
+          "id": "basic", "name": "Basic", "price": "$79",  "period": "/ visit",
+          "description": "Perfect for regular upkeep of small homes.",
+          "features": [
+            { "text": "Up to 2 bedrooms", "included": true },
+            { "text": "Kitchen & bathrooms",  "included": true },
+            { "text": "Deep clean add-on",    "included": false },
+            { "text": "Same-day booking",     "included": false }
+          ],
+          "cta": { "label": "Book Now", "href": "#booking" }
+        },
+        {
+          "id": "standard", "name": "Standard", "price": "$129", "period": "/ visit", "featured": true,
+          "description": "Our most popular — covers the whole home.",
+          "features": [
+            { "text": "Up to 4 bedrooms",     "included": true },
+            { "text": "Kitchen & bathrooms",  "included": true },
+            { "text": "Inside fridge & oven", "included": true },
+            { "text": "Same-day booking",     "included": false }
+          ],
+          "cta": { "label": "Book Now", "href": "#booking" }
+        },
+        {
+          "id": "deep", "name": "Deep Clean", "price": "$249", "period": "/ visit",
+          "description": "Full deep clean — move-in, move-out, or spring clean.",
+          "features": [
+            { "text": "Entire property",         "included": true },
+            { "text": "Cabinet interiors",       "included": true },
+            { "text": "Windows & sills",         "included": true },
+            { "text": "Priority same-day slots", "included": true }
+          ],
+          "cta": { "label": "Book Now", "href": "#booking" }
+        }
+      ]
+    },
+    "testimonials": {
+      "sectionTitle": "What Customers Say",
+      "items": [
+        { "id": "te1", "quote": "My apartment has never looked this good. Incredibly thorough and friendly team.", "name": "Rachel K.", "rating": 5 },
+        { "id": "te2", "quote": "I've tried three other cleaners — SparkClean is on a totally different level.", "name": "David M.", "rating": 5 }
+      ]
+    },
+    "gallery": {
+      "sectionTitle": "Before & After Gallery",
+      "items": [
+        { "id": "g1", "imageUrl": "/images/gallery-1.jpg", "alt": "Clean bathroom" },
+        { "id": "g2", "imageUrl": "/images/gallery-2.jpg", "alt": "Spotless kitchen" }
+      ]
+    },
+    "partners": {
+      "sectionTitle": "Trusted By",
+      "items": [
+        { "id": "p1", "name": "Airbnb Superhosts", "logoUrl": "/images/partner-1.svg" },
+        { "id": "p2", "name": "PropertyCo",        "logoUrl": "/images/partner-2.svg" }
+      ]
+    },
+    "faq": {
+      "sectionTitle": "Common Questions",
+      "items": [
+        { "id": "f1", "question": "Do I need to be home?",                   "answer": "No — you can provide a key or code and we'll handle the rest." },
+        { "id": "f2", "question": "Are your products pet-safe?",              "answer": "Yes, all eco options are non-toxic and safe for dogs and cats." },
+        { "id": "f3", "question": "What if I'm not satisfied?",               "answer": "We'll reclean for free within 24 hours — satisfaction guaranteed." }
+      ]
+    },
+    "about": {
+      "sectionTitle": "Why SparkClean?",
+      "body": "Founded in Seattle in 2015, SparkClean has completed over 10,000 cleans with a 4.9-star average rating.",
+      "imageUrl": "/images/about.jpg", "imageAlt": "Cleaner at work", "imagePosition": "right"
+    },
+    "ctaBanner": {
+      "headline": "Ready for a Sparkling Home?",
+      "subtext": "Book in under 60 seconds. Flexible scheduling, no contracts.",
+      "cta": { "label": "Get a Quote", "href": "#booking" }
+    },
+    "booking": {
+      "sectionTitle": "Book a Clean",
+      "sectionSubtitle": "Tell us about your home and we'll send a quote within the hour.",
+      "services": [
+        { "id": "basic",    "label": "Basic Clean — from $79" },
+        { "id": "standard", "label": "Standard Clean — from $129" },
+        { "id": "deep",     "label": "Deep Clean — from $249" }
+      ],
+      "apiEndpoint": "/api/booking"
+    },
+    "contact": { "sectionTitle": "Get in Touch", "apiEndpoint": "/api/contact" },
+    "team": null,
+    "menu": null,
+    "schedule": null,
+    "openingHours": null,
+    "footer": {
+      "linkGroups": [
+        { "heading": "Services", "links": [{ "label": "Standard Clean", "href": "#services" }, { "label": "Deep Clean", "href": "#services" }] },
+        { "heading": "Company",  "links": [{ "label": "Pricing", "href": "#pricing" }, { "label": "Book", "href": "#booking" }] }
+      ],
+      "copyrightText": "© 2026 SparkClean Co. All rights reserved."
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "_comment": "Restaurant starter — copy to siteConfig.json and fill in real content",
+  "businessType": "restaurant",
+  "business": {
+    "name": "Bella Cucina",
+    "tagline": "Authentic Italian Dining",
+    "logoText": "Bella Cucina",
+    "contactInfo": {
+      "phone": "+1 (555) 123-4567",
+      "email": "hello@bellacucina.example.com",
+      "address": "42 Vine Street, New York, NY 10001",
+      "mapEmbedUrl": ""
+    },
+    "socialLinks": [
+      { "platform": "instagram", "url": "https://instagram.com/" },
+      { "platform": "facebook",  "url": "https://facebook.com/" }
+    ]
+  },
+  "nav": {
+    "items": [
+      { "label": "Menu",        "href": "#menu" },
+      { "label": "About",       "href": "#about" },
+      { "label": "Gallery",     "href": "#gallery" },
+      { "label": "Hours",       "href": "#opening-hours" },
+      { "label": "Contact",     "href": "#contact" }
+    ],
+    "ctaButton": { "label": "Reserve a Table", "href": "#booking" }
+  },
+  "seo": {
+    "title": "Bella Cucina — Authentic Italian Restaurant",
+    "description": "Handmade pasta, wood-fired pizza, and seasonal Italian dishes in the heart of New York.",
+    "keywords": "Italian restaurant, pasta, pizza, dining, New York"
+  },
+  "sections": {
+    "hero": true, "services": false, "about": true, "ctaBanner": true,
+    "testimonials": true, "gallery": true, "faq": true, "partners": false,
+    "pricing": false, "booking": true, "contact": true, "map": true,
+    "team": false, "menu": true, "schedule": false, "openingHours": true, "beforeAfter": false
+  },
+  "sectionOrder": ["hero","menu","openingHours","about","gallery","testimonials","faq","ctaBanner","booking","contact","map"],
+  "content": {
+    "hero": {
+      "headline": "Where Every Meal Tells a Story",
+      "subheadline": "Handmade pasta, wood-fired pizzas, and recipes passed down for generations.",
+      "primaryCta":  { "label": "View Our Menu",      "href": "#menu" },
+      "secondaryCta":{ "label": "Reserve a Table",    "href": "#booking" },
+      "slides": [
+        { "imageUrl": "/images/hero-1.jpg", "imageAlt": "Our dining room" },
+        { "imageUrl": "/images/hero-2.jpg", "imageAlt": "Fresh pasta being made" }
+      ]
+    },
+    "menu": {
+      "sectionTitle": "Our Menu",
+      "sectionSubtitle": "Fresh, seasonal ingredients prepared with care.",
+      "categories": [
+        {
+          "id": "starters", "label": "Starters",
+          "items": [
+            { "id": "bruschetta", "name": "Bruschetta", "description": "Grilled bread with tomato, garlic, basil, and olive oil.", "price": "$9", "tags": ["vegan"] },
+            { "id": "caprese",    "name": "Caprese Salad", "description": "Fresh mozzarella, tomatoes, and basil with balsamic glaze.", "price": "$12", "tags": ["vegetarian"] }
+          ]
+        },
+        {
+          "id": "pasta", "label": "Pasta",
+          "items": [
+            { "id": "tagliatelle", "name": "Tagliatelle Bolognese", "description": "Slow-cooked beef and pork ragù, egg pasta.", "price": "$22" },
+            { "id": "cacio",       "name": "Cacio e Pepe", "description": "Spaghetti, Pecorino Romano, black pepper.", "price": "$18", "tags": ["vegetarian"] }
+          ]
+        },
+        {
+          "id": "pizza", "label": "Pizza",
+          "items": [
+            { "id": "margherita", "name": "Margherita", "description": "Tomato, fior di latte, fresh basil.", "price": "$16", "tags": ["vegetarian"] },
+            { "id": "diavola",    "name": "Diavola", "description": "Spicy salami, tomato, mozzarella.", "price": "$19", "tags": ["spicy"] }
+          ]
+        }
+      ]
+    },
+    "openingHours": {
+      "sectionTitle": "Opening Hours",
+      "days": {
+        "mon": "closed",
+        "tue": { "open": "12:00 PM", "close": "10:00 PM" },
+        "wed": { "open": "12:00 PM", "close": "10:00 PM" },
+        "thu": { "open": "12:00 PM", "close": "10:00 PM" },
+        "fri": { "open": "12:00 PM", "close": "11:00 PM" },
+        "sat": { "open": "11:00 AM", "close": "11:00 PM" },
+        "sun": { "open": "11:00 AM", "close": "9:00 PM" }
+      }
+    },
+    "about": {
+      "sectionTitle": "Our Story",
+      "sectionSubtitle": "Three generations of Italian cooking",
+      "body": "Bella Cucina was founded in 1998 by the Rossi family, who brought authentic Neapolitan recipes to New York. Every dish is made from scratch using imported Italian ingredients and time-honoured techniques.",
+      "imageUrl": "/images/about.jpg",
+      "imageAlt": "Chef preparing pasta",
+      "imagePosition": "right",
+      "stats": [
+        { "value": "25+", "label": "Years serving" },
+        { "value": "3",   "label": "Generations" },
+        { "value": "50+", "label": "Signature dishes" }
+      ]
+    },
+    "gallery": {
+      "sectionTitle": "A Taste of the Experience",
+      "items": [
+        { "id": "g1", "imageUrl": "/images/gallery-1.jpg", "alt": "Pasta dish", "caption": "House-made tagliatelle" },
+        { "id": "g2", "imageUrl": "/images/gallery-2.jpg", "alt": "Pizza", "caption": "Wood-fired Margherita" },
+        { "id": "g3", "imageUrl": "/images/gallery-3.jpg", "alt": "Dining room", "caption": "Our warm dining room" },
+        { "id": "g4", "imageUrl": "/images/gallery-4.jpg", "alt": "Tiramisu", "caption": "Classic tiramisu" }
+      ]
+    },
+    "testimonials": {
+      "sectionTitle": "What Our Guests Say",
+      "items": [
+        { "id": "t1", "quote": "Best pasta I have had outside of Rome. Incredible!", "name": "Maria G.", "rating": 5 },
+        { "id": "t2", "quote": "The atmosphere is magical and the food even better.", "name": "James P.", "rating": 5 }
+      ]
+    },
+    "faq": {
+      "sectionTitle": "FAQ",
+      "items": [
+        { "id": "f1", "question": "Do you take reservations?",   "answer": "Yes, online reservations are available up to 30 days in advance." },
+        { "id": "f2", "question": "Is there a vegetarian menu?", "answer": "Absolutely — we have a dedicated vegetarian section with seasonal options." }
+      ]
+    },
+    "ctaBanner": {
+      "headline": "Reserve Your Table Tonight",
+      "subtext": "Join us for an unforgettable Italian dining experience.",
+      "cta": { "label": "Make a Reservation", "href": "#booking" }
+    },
+    "booking": {
+      "sectionTitle": "Reservations",
+      "sectionSubtitle": "Book online and we'll confirm within the hour.",
+      "services": [
+        { "id": "lunch",  "label": "Lunch (12 PM – 3 PM)" },
+        { "id": "dinner", "label": "Dinner (6 PM – 10 PM)" }
+      ],
+      "apiEndpoint": "/api/booking"
+    },
+    "contact": {
+      "sectionTitle": "Get in Touch",
+      "sectionSubtitle": "Questions, private events, or special requests — we're happy to help.",
+      "apiEndpoint": "/api/contact"
+    },
+    "footer": {
+      "linkGroups": [
+        { "heading": "Explore", "links": [{ "label": "Menu", "href": "#menu" }, { "label": "Gallery", "href": "#gallery" }] },
+        { "heading": "Visit",   "links": [{ "label": "Hours", "href": "#opening-hours" }, { "label": "Contact", "href": "#contact" }] }
+      ],
+      "copyrightText": "© 2026 Bella Cucina. All rights reserved."
+    },
+    "partners": { "items": [] },
+    "pricing":  { "sectionTitle": "Pricing", "plans": [] }
+  }
+}

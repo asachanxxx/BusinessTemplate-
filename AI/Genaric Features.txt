@@ -1,0 +1,89 @@
+🔷 1. Layout & Structure ✅
+Sticky header
+Transparent header
+Multi-level footer
+Section-based layout
+Grid system
+Full-width / boxed layout
+Split sections
+Reusable sections
+CTA sections
+Card layouts
+Alternating sections
+Landing page layout
+Multi-page support
+
+🔷 2. Navigation ✅
+Top navigation bar
+Dropdown menus
+Mobile hamburger menu
+Sticky navigation
+Smooth scroll
+Anchor links
+Active menu highlight
+CTA button in nav
+Footer navigation
+Back-to-top
+
+🔷 3. Visual Design ✅
+Brand color palette
+Typography system
+Spacing system
+Shadows & elevation
+Hover effects
+Micro-interactions
+Icon style
+Button styles
+Background styles
+
+🔷 5. UI Elements ✅
+Buttons
+Forms
+Inputs
+Dropdowns
+Checkbox / radio
+Form validation
+Modals
+Toasts
+Tabs
+Accordions
+Sliders
+
+🔷 6. Media & Assets ✅
+Responsive images
+Image optimization
+Lazy loading
+Video embeds
+SVG icons
+Lightbox gallery
+Favicon
+Logo variations
+
+🔷 7. Responsiveness ✅ (ALL KEEP)
+Mobile-first
+Tablet
+Desktop
+Flexible grid
+Responsive typography
+Mobile nav
+Touch-friendly
+Breakpoints
+
+🔷 8. Accessibility ⚠ Minimal Only
+Proper headings
+Alt text
+Basic contrast
+
+
+🔷 9. SEO & Meta ✅
+Meta title & description
+Open Graph
+Structured headings
+Clean URLs
+Schema (basic)
+Alt tags
+Canonical tags
+
+🔷 10. Localization ⚠ Optional
+Multi-language support
+Translation-ready

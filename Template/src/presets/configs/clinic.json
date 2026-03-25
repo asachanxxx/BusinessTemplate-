@@ -1,0 +1,167 @@
+{
+  "_comment": "Medical / wellness clinic starter config",
+  "businessType": "clinic",
+  "business": {
+    "name": "Meridian Health Clinic",
+    "tagline": "Your Health, Our Priority.",
+    "logoText": "Meridian",
+    "contactInfo": {
+      "phone": "+1 (555) 100-2030",
+      "email": "appointments@meridianhealth.example.com",
+      "address": "55 Wellness Blvd, San Diego, CA 92101",
+      "mapEmbedUrl": ""
+    },
+    "socialLinks": [
+      { "platform": "facebook", "url": "https://facebook.com/" }
+    ]
+  },
+  "nav": {
+    "items": [
+      { "label": "Services",  "href": "#services" },
+      { "label": "Our Team",  "href": "#team" },
+      { "label": "Pricing",   "href": "#pricing" },
+      { "label": "About",     "href": "#about" }
+    ],
+    "ctaButton": { "label": "Book Appointment", "href": "#booking" }
+  },
+  "seo": {
+    "title": "Meridian Health Clinic — San Diego",
+    "description": "Compassionate primary care, physiotherapy, and wellness services in San Diego.",
+    "keywords": "clinic, doctor, physiotherapy, GP, wellness, San Diego"
+  },
+  "sections": {
+    "hero": true, "services": true, "about": true, "ctaBanner": true,
+    "testimonials": true, "gallery": false, "faq": true, "partners": true,
+    "pricing": true, "booking": true, "contact": true, "map": true,
+    "team": true, "menu": false, "schedule": false, "openingHours": true, "beforeAfter": false
+  },
+  "sectionOrder": ["hero","services","team","pricing","testimonials","partners","faq","openingHours","about","ctaBanner","booking","contact","map"],
+  "content": {
+    "hero": {
+      "headline": "Quality Healthcare Close to Home",
+      "subheadline": "Primary care, physiotherapy, and wellness services delivered with compassion and expertise.",
+      "primaryCta":   { "label": "Book an Appointment", "href": "#booking" },
+      "secondaryCta": { "label": "Meet Our Team",        "href": "#team" },
+      "slides": [
+        { "imageUrl": "/images/hero-1.jpg", "imageAlt": "Clinic reception" }
+      ]
+    },
+    "services": {
+      "sectionTitle": "Our Services",
+      "sectionSubtitle": "Comprehensive care for every stage of life.",
+      "variant": "services",
+      "items": [
+        { "id": "gp",      "icon": "Stethoscope",   "title": "General Practice",     "description": "Routine check-ups, illness management, referrals, and preventive care." },
+        { "id": "physio",  "icon": "Activity",       "title": "Physiotherapy",        "description": "Evidence-based treatment for pain, injury rehabilitation, and posture." },
+        { "id": "mental",  "icon": "Brain",          "title": "Mental Health",         "description": "Psychological therapy, counselling, and stress management support." },
+        { "id": "nutrition","icon": "Apple",         "title": "Nutrition Consulting",  "description": "Personalised dietary advice and meal planning from accredited dietitians." }
+      ]
+    },
+    "team": {
+      "sectionTitle": "Meet Our Practitioners",
+      "sectionSubtitle": "Qualified, experienced, and passionate about patient outcomes.",
+      "layout": "grid",
+      "items": [
+        { "id": "tm1", "name": "Dr. Sarah Nguyen",   "role": "General Practitioner",    "bio": "MBBS, FRACGP — 12 years in primary care with a focus on preventive health.", "photoUrl": "/images/team-1.jpg" },
+        { "id": "tm2", "name": "James Carver",        "role": "Senior Physiotherapist",  "bio": "BPhysio — specialist in sports injury rehabilitation and chronic pain management.", "photoUrl": "/images/team-2.jpg" },
+        { "id": "tm3", "name": "Dr. Priya Sharma",   "role": "Clinical Psychologist",   "bio": "PhD Psychology — CBT practitioner supporting anxiety, depression, and burnout.", "photoUrl": "/images/team-3.jpg" }
+      ]
+    },
+    "pricing": {
+      "sectionTitle": "Consultation Fees",
+      "sectionSubtitle": "Transparent fees. Medicare bulk-billing available for eligible patients.",
+      "plans": [
+        {
+          "id": "standard", "name": "Standard Consult", "price": "$85", "period": "per visit",
+          "description": "Up to 15 minutes with a GP for routine concerns.",
+          "features": [
+            { "text": "GP consultation",          "included": true },
+            { "text": "Scripts & referrals",       "included": true },
+            { "text": "Specialist referral",       "included": false },
+            { "text": "Follow-up plan",            "included": false }
+          ],
+          "cta": { "label": "Book", "href": "#booking" }
+        },
+        {
+          "id": "long", "name": "Long Consult", "price": "$145", "period": "per visit", "featured": true,
+          "description": "30-minute appointment for complex or multi-issue concerns.",
+          "features": [
+            { "text": "Extended GP time",          "included": true },
+            { "text": "Scripts & referrals",       "included": true },
+            { "text": "Specialist referral",       "included": true },
+            { "text": "Personalised health plan",  "included": true }
+          ],
+          "cta": { "label": "Book", "href": "#booking" }
+        }
+      ]
+    },
+    "openingHours": {
+      "sectionTitle": "Opening Hours",
+      "holidayNotice": "Public holiday hours may vary — please call ahead.",
+      "days": {
+        "mon": { "open": "8:00 AM", "close": "6:00 PM" },
+        "tue": { "open": "8:00 AM", "close": "6:00 PM" },
+        "wed": { "open": "8:00 AM", "close": "7:00 PM" },
+        "thu": { "open": "8:00 AM", "close": "6:00 PM" },
+        "fri": { "open": "8:00 AM", "close": "5:00 PM" },
+        "sat": { "open": "9:00 AM", "close": "1:00 PM" },
+        "sun": "closed"
+      }
+    },
+    "testimonials": {
+      "sectionTitle": "Patient Stories",
+      "items": [
+        { "id": "te1", "quote": "Dr. Nguyen took the time to listen and finally diagnosed a condition three other doctors missed.", "name": "Helen B.", "rating": 5 },
+        { "id": "te2", "quote": "Six weeks of physio with James and my knee pain is completely gone. Incredible results.", "name": "Tom W.", "rating": 5 }
+      ]
+    },
+    "partners": {
+      "sectionTitle": "Affiliated With",
+      "items": [
+        { "id": "p1", "name": "RACGP",              "logoUrl": "/images/partner-1.svg" },
+        { "id": "p2", "name": "Australian Medicare", "logoUrl": "/images/partner-2.svg" }
+      ]
+    },
+    "faq": {
+      "sectionTitle": "Patient FAQ",
+      "items": [
+        { "id": "f1", "question": "Do I need a referral to see a specialist?",  "answer": "For Medicare rebates a GP referral is required for most specialists." },
+        { "id": "f2", "question": "Is bulk-billing available?",                 "answer": "Bulk-billing is available for eligible concession card holders and children under 16." },
+        { "id": "f3", "question": "Can I book a telehealth appointment?",       "answer": "Yes — telephone and video consultations are available for existing patients." }
+      ]
+    },
+    "about": {
+      "sectionTitle": "About Meridian",
+      "body": "Established in 2010, Meridian Health Clinic brings together GPs, allied health, and mental health professionals under one roof to deliver truly holistic healthcare.",
+      "imageUrl": "/images/about.jpg", "imageAlt": "Meridian clinic interior", "imagePosition": "left"
+    },
+    "ctaBanner": {
+      "headline": "Taking New Patients",
+      "subtext": "Same-week appointments available — no referral needed for most services.",
+      "cta": { "label": "Book an Appointment", "href": "#booking" }
+    },
+    "booking": {
+      "sectionTitle": "Book an Appointment",
+      "sectionSubtitle": "Choose your service and preferred practitioner and we'll confirm within 2 hours.",
+      "services": [
+        { "id": "gp-standard",  "label": "GP — Standard Consult (15 min)" },
+        { "id": "gp-long",      "label": "GP — Long Consult (30 min)" },
+        { "id": "physio",       "label": "Physiotherapy Appointment" },
+        { "id": "psych",        "label": "Psychology Session" }
+      ],
+      "apiEndpoint": "/api/booking"
+    },
+    "contact": { "sectionTitle": "Contact Us", "apiEndpoint": "/api/contact" },
+    "gallery": null,
+    "menu": null,
+    "schedule": null,
+    "beforeAfter": null,
+    "footer": {
+      "linkGroups": [
+        { "heading": "Services", "links": [{ "label": "General Practice", "href": "#services" }, { "label": "Physiotherapy", "href": "#services" }] },
+        { "heading": "Clinic",   "links": [{ "label": "Our Team", "href": "#team" }, { "label": "Book", "href": "#booking" }] }
+      ],
+      "copyrightText": "© 2026 Meridian Health Clinic. All rights reserved."
+    }
+  }
+}
